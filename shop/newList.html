@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/css/mui.picker.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/newList.css">
+    <style>
+        .layui-laydate-content{
+            width: 100%;
+        }
+        .layui-laydate-main{
+            width: 100%;
+        }
+        .layui-laydate-content table{
+            width: 100%;
+        }
+    </style>
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header">
+            <a class="icon_left" href="/index.html">
+                <span class=" mui-icon mui-icon-left-nav "></span>
+            </a>
+            <h4>日期选择</h4>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+
+        <div class="che_main">
+            
+            <header class="timer_top">
+                <div class="timer_father">
+                    <div class="fiex_warp">
+                        <div class="timer_top_page" data-timeId="1"> 
+                            <div class="list_data">05-04</div>
+                            <span class="font_xs">今天</span>
+                        </div>
+                        <div class="timer_top_page timer_active" data-timeId="2">
+                            <div class="list_data">5-4</div>
+                            <span class="font_xs">今天</span>
+                        </div>
+                        <div class="timer_top_page"  data-timeId="3">
+                            <div class="list_data">5-4</div>
+                            <span class="font_xs">今天</span>
+                        </div>
+                        <div class="timer_top_page"  data-timeId="4">
+                            <div class="list_data">5-4</div>
+                            <span class="font_xs">今天</span>
+                        </div>
+                        <div class="timer_top_page"  data-timeId="5">
+                            <div class="list_data">5-4</div>
+                            <span class="font_xs">今天</span>
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="datapicker_datas">
+                            <span class="mui-icon iconfont icon-riqi1"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="timer_content">
+                        
+                            <!-- 大坑 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop" class="mui-popover">
+            <div class="laydata" style="height: 100%"></div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/js/mui.picker.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../lib/laydate/laydate/laydate/laydate.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/newList.js"></script>
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+    <div class="fathers">
+        <div class="store" data-storeid={{v.store_id}}>
+            <div class="storeTou"><img src="http://api.chebazu.com.cn/uploads/store/{{v.store_logo}}" alt=""></div>
+            <div class="storemain">
+                <div class="storeName">{{v.store_name}}</div>
+                <div class="storeStar">
+                    <span>5分</span>
+                </div>
+                <div class="storeKm">{{v.store_province}} {{v.store_city}}{{v.store_district}}{{v.store_address}}</div>
+            </div>
+        </div>
+        <div class="content_title">
+            <ul class="content_ulli">
+                    <!-- 挖坑 -->
+                {{each data[i].timeInfo as val k}}
+            
+                    <li class="contentList" data-timeInfo={{k}}>
+                        <div>
+                            <div class="selectime ">{{val.time}}</div>
+                            <!-- <div class="sale vertical-center">特惠</div> -->
+                            <span class="money vertical-center">
+                                <em></em></span>
+                            <div class=" reserve vertical-center reserve_color">预定</div>
+                        </div>
+                    </li>
+               
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+.che_main {
+  padding: 0 2rem;
+}
+.che_main .carsphoto {
+  height: 14.65rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.che_main .carsphoto img {
+  width: 4rem;
+}
+.che_main .startMon {
+  font-size: .6rem;
+  line-height: 1.1rem;
+}
+.che_main .startMon em {
+  color: #fda831;
+}

@@ -1,0 +1,22 @@
+.che_main .mui-scroll .volist .volist_start {
+  margin: 0 .5rem;
+  margin-top: .5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: .7rem;
+  padding: .5rem;
+  height: 3.5rem;
+  border-radius: .5rem;
+  background-color: #fff;
+}
+.che_main .mui-scroll .volist .volist_start .che_display {
+  justify-content: start;
+}
+.che_main .mui-scroll .volist .volist_start .volum_name {
+  color: #ea5504;
+  width: 4.5rem;
+}
+.che_main .mui-scroll .volist .volist_start .volum_time {
+  display: inline-block;
+  width: 3.5rem;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.picker.min.css">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/message.css">
+    <link rel="stylesheet" href="../css/mycss/editmycar.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header">
+            <a class="icon_left" href="javascript:history.go(-1)">
+                <span class="mui-icon mui-icon-left-nav "></span>
+            </a>
+            <h4>编辑我的车</h4>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main hiden">
+
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="editFather">
+                        <!-- 挖坑 -->
+
+                    </div>
+
+                    <div class="editMoren" style="display: none">
+                        <div>
+                            <span>设为默认车辆</span>
+                        </div>
+                        <div class="mui-switch mui-switch-mini mui-active">
+                            <div class="mui-switch-handle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="che_footer">
+            <div class="message_div">
+                <a href="javascript:;">
+                    <span class="footer_fonts">保存</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 弹出沪名 -->
+        <!-- <div id="pop_bottom" class="mui-popover order_zindex">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul class="order_botPover mui-clearfix">
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>嗨</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>雨</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                        <li class="order_carry">
+                            <span>京</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/js/mui.picker.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<!-- <script src="../js/message.js"></script> -->
+<script src="../js/myjs/editmycar.js"></script>
+<script type="text/html" id="editcar">
+    <div class="editmycar_head">
+        <div class="edit_img">
+            <img src="../img/img/suo1.png" alt="">
+        </div>
+        {{if data.type_id==0}}
+        <div class="edit_name che_color">请选择车型</div>
+        {{else}}
+        <div class="edit_name">{{data.type_name}}</div>
+
+        {{/if}}
+    </div>
+    <ul class="che_form_wrap">
+        <li class="che_line_wrap shoping_che">
+            <div class="che_line_left"> 购车时间</div>
+            <div class="che_line_right shoping_time">{{data.shop_time}} </div>
+            <span class="mui-icon mui-icon-arrowright"></span>
+        </li>
+        <li class="che_line_wrap secend">
+            <div class="che_line_left">行驶里程</div>
+            <div class="che_line_right">
+                <input id="che-input" type="text" placeholder="公里数" maxlength="7" class="che_line_input" value="{{data.cart_mile}}">
+                <span class="che_text_spac">km</span>
+
+            </div>
+        </li>
+        <li class="threeRen">
+            <div>填写完整可用于查询违章</div>
+        </li>
+        <li class="che_line_wrap">
+            <div class="che_line_left">
+                <span>车牌号</span>
+                <!-- <span class="carName">沪<span class="mui-icon mui-icon-arrowdown"></span></span> -->
+            </div>
+            <span class="import">
+                <input type="text" placeholder="请输入车牌号码" maxlength="7" class="oeder_detail" value="{{data.cart_licens}}">
+            </span>
+        </li>
+        <li class="che_line_wrap secend">
+            <div class="che_line_left">发动机号</div>
+            <div class="che_line_right">
+                <input id="eaidmyCar_input" type="text" placeholder="请输入发动机号" class="che_line_input">
+            </div>
+        </li>
+    </ul>
+</script>
+
+</html>

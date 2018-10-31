@@ -1,0 +1,119 @@
+.che_container {
+  padding-bottom: 0;
+}
+.che_container .che_header > h4 span {
+  font-size: 1rem;
+}
+.che_container .che_header .icon_right {
+  height: 2.2rem;
+  position: absolute;
+  top: 0;
+  right: .75rem;
+  color: #000;
+  line-height: 2.2rem;
+}
+.che_container .che_header .icon_right > span {
+  font-size: .75rem;
+}
+.che_container .che_header .icon_right > em {
+  display: inline-block;
+  width: .35rem;
+  height: .35rem;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: .65rem;
+  right: -0.35rem;
+}
+.che_container .che_main .mui-scroll {
+  padding: 0 .65rem 0 .8rem;
+}
+.che_container .che_main .mui-scroll .discount_main {
+  margin-top: .5rem;
+  padding: .9rem .6rem .6rem .7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: .75rem;
+  background: #ffffff url("../../img/img/bej.png") no-repeat bottom left;
+  background-size: 100%;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead {
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .moddil div {
+  height: .85rem;
+  line-height: .75rem;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .moddil .aging {
+  font-size: .6rem;
+  color: #a0a0a0;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .zheko {
+  color: #ea5504;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .zheko em {
+  font-size: .95rem;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .mui-icon-arrowright {
+  transition: all .5s;
+}
+.che_container .che_main .mui-scroll .discount_main .disHead .xuanzhuan {
+  transform: rotate(90deg);
+}
+.che_container .che_main .mui-scroll .discount_main .mainFather {
+  overflow: hidden;
+  transition: all .5s;
+  height: 0px;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain {
+  font-size: .7rem;
+  flex-direction: column;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .comboFather {
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+  margin-bottom: .25rem;
+  padding-bottom: .25rem;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .disMain_main {
+  flex-wrap: wrap;
+  padding: .25rem 0;
+  padding-left: .25rem;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .disMain_main > span {
+  width: 50%;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .disMain_main > span > del {
+  color: #000;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .commobColor {
+  z-index: 100;
+}
+.che_container .che_main .mui-scroll .discount_main .disMain .cardColor {
+  width: 95%;
+  margin: 0 auto;
+  color: #a0a0a0;
+}
+.che_container .che_main .mui-scroll .discount_main .disNav {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  font-size: .6rem;
+  color: #a0a0a0;
+  align-items: flex-end;
+}
+.che_container .che_main .mui-scroll .discount_main .disNav .oldMoney {
+  padding: 0 5px;
+}
+.che_container .che_main .mui-scroll .discount_main .disNav .looks {
+  padding: 0 5px;
+  background-color: #ea5504;
+  color: #ffffff;
+  border-radius: 5px;
+}

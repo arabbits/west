@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/mycss/orderdetail.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:history.go(-1);">
+                <span class="mui-icon mui-icon-back "></span>
+            </a>
+            <h4>订单详情</h4>
+        </div>
+
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                
+                <div class="mui-scroll">
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/myjs/orderdetail.js"></script>
+<script type="text/html" id="tpl">
+
+        <div class="che_orderdetail">
+            <div class="orderHead">
+                <div class="detail_head borders">
+                    <div class="">
+                        <span>服务商家:</span>
+                        <span class="che_color">{{storeNames}}</span>
+                    </div>
+                    {{if pay_status==0}}
+                        <div>取消订单</div>
+                    {{/if}}
+                </div>
+                
+                <div class="detail_head">
+                    <div class="">
+                        <span>订单编号:</span>
+                        <span class="che_color">{{orderNum}}</span>
+                    </div>
+                </div>
+            </div>
+            {{each goodList as v i}}
+            <div class="detail_main">
+                <div class="order_this">
+                    <div class="detail_frist">
+                        <div>
+                            <span>商品名称:</span>
+                            <span class="detail_color">{{v.order_name}}</span>
+                        </div>
+                        <div><span class="iconfont icon-shanchu1"></span></div>
+                    </div>
+                    <div class="detail_lie">
+                        <span>订单时间:</span>
+                        <span class="detail_time detail_color">{{orderTime}}</span>
+                    </div>
+                    <!-- <div class="detail_lie">
+                        <span>服务方式:</span>
+                        <span class="detail_gohome detail_color">到店预约</span>
+                    </div> -->
+                    <div class="detail_lie">
+                        <span>套餐价格:</span>
+                        <span class="detail_money">{{v.order_maoney}}</span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <div class="detail_allmoney">
+                <div class="allbox">
+                    <span>合计 :</span>
+                    <span class="everyMoney">{{all_money}}</span>
+                </div>
+                {{if pay_status==0}}
+                <div class="payment">付款</div>
+                {{else}}
+                <div class="paymentOk">已付款</div>
+                
+                {{/if}}
+            </div>
+        </div>
+        <div class="detaile_footer">
+            <div class="detail_over">已完成</div>
+        </div>
+</script>
+
+</html>

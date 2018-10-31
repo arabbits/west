@@ -1,0 +1,83 @@
+.che_header > .icon_right {
+    position: absolute;
+    height: 2.2rem;
+    top: 0;
+    right: .75rem;
+    color: #000;
+    line-height: 2.2rem;
+  }
+  .che_header > .icon_right > span {
+    font-size: 1rem;
+  }
+
+
+  /* //弹出层样式修改 */
+.mui-popover {
+    border-radius: 1.1rem !important;
+    position: fixed;
+    width: 82%;
+    height: 70%;
+    /* height: 82%; */
+    border-radius: 0;
+    left: 50%;
+    top: 46%;
+    margin: 0 auto;
+    z-index: 999;
+    background-color: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  
+  
+  /*         修改laydate 样式    */
+.layui-laydate, .layui-laydate-hint{
+    width: 100%;
+  }
+  .layui-laydate-content{
+    width: 100%;
+    
+  }
+  .layui-laydate-main{
+    width: 100% !important;
+  }
+  .layui-laydate-main .layui-laydate-header{
+    height: 3.2rem;
+    font-size: .8rem;
+    line-height: 2.2rem;
+    border: none;
+  }
+  .layui-laydate-main .layui-laydate-header .laydate-next-y{
+    display: none;
+  }
+  .layui-laydate-main .layui-laydate-header .laydate-prev-y{
+  
+    display: none;
+  }
+  .laydata .layui-laydate {
+    height: 100%;
+  }
+  .laydata .layui-laydate .layui-laydate-main{
+    height: 88%;
+  }
+  .laydata .layui-laydate .layui-laydate-footer{
+    height: 7%;
+    border: none;
+  }
+  .laydata .layui-laydate .layui-laydate-footer .laydate-footer-btns{
+    width: 14.5rem;
+    height: 1.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  .laydata .layui-laydate .layui-laydate-footer .laydate-footer-btns span{
+    /* width: 580px; */
+    font-size: .6rem;
+    border: none;
+  
+  }

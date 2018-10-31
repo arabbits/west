@@ -1,0 +1,61 @@
+.che_main {
+  margin-top: 1px;
+  background-color: #fff;
+}
+.che_main .allAddress {
+  margin-bottom: .5rem;
+  background-color: #fff;
+  padding: .75rem ;
+  height: 6.05rem;
+}
+.che_main .allAddress .addressOne {
+  font-size: .6rem;
+  color: #222;
+}
+.che_main .allAddress .addressOne .nameNum {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: .7rem;
+}
+.che_main .allAddress .addressOne .particular {
+  height: 1.45rem;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.che_main .allAddress .addressOne .che_culty {
+  height: 1.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.che_main .allAddress .addressOne .che_culty > .moren {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  height: .8rem;
+  line-height: .75rem;
+}
+.che_main .allAddress .addressOne .che_culty > .moren .icon-xuanze {
+  margin-right: .5rem;
+  color: #ccc;
+}
+.che_main .allAddress .addressOne .che_culty > .moren .colors {
+  color: #ea5504;
+}
+.che_main .allAddress .addressOne .che_culty .addStart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: end;
+}
+.che_main .allAddress .addressOne .che_culty .addStart div > .mui-icon {
+  font-size: 1rem;
+  color: #a0a0a0;
+}

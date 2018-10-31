@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/product/traffic.css">
+    <title>车吧族</title>
+    <style>
+        .layui-laydate-content{
+            width: 100%;
+        }
+        .layui-laydate-main{
+            width: 100%;
+        }
+        .layui-laydate-content table{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>行驶数据</h4>
+            <a class="icon_right" href="JavaScript:;">
+                <span class="iconfont icon-riqi1"></span>
+            </a>
+        </div>
+        
+        <div class="loading">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                    <!--子盒子-->
+                <div class="mui-scroll">
+
+                </div>
+            </div>
+        </div>
+        <div id="pop" class="mui-popover">
+            <div class="laydata" style="height: 100%"></div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../lib/laydate/laydate/laydate/laydate.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/product/traffic.js"></script>
+<script type="text/html" id="tpl">
+    {{if data.length==0}}
+    <div class="volist">
+        <div class="volist_nomode">
+            <div class="volist_bgimg che_display">
+                <div class="backImg"></div>
+                <div>今日暂无出行,</div>
+                <div>点击右上角查看其他日期出行~</div>
+            </div>
+            
+        </div>
+    </div>
+    {{else}}
+    {{each data as v i}}
+        
+    <div class="traffic_main" data-travelid="{{v.travel_id}}"> 
+            <div class="nav_traffic">
+                <img src="../img/product/shujutu.png" alt="">
+            </div>
+            <div class="amend_traffic">
+                <div class="main_head">{{v.year}}</div>
+                <div class="traffic_text">
+                    <div class="tratticshow">
+                        <div class="tra_start">
+                            <div class="start_timer">
+                                <span class="start_time">{{v.start_time}}</span>
+                                {{if v.isONReal == false}}
+                                <span class="show_dots">点火发车</span>
+                                {{else}}
+                                <span class="show_dots">{{v.onLonLat}}</span>
+                                {{/if}}
+                            </div>
+                            <span class="iconfont icon-shanchu"></span>
+                        </div>
+                        <div class="tra_trans">
+                            <div class="imtra">
+                                <img src="../img/product/2.png" alt=""> 
+                                <span>急加速 <em style="color: #fc0203">{{v.accelerate}}</em>次</span>
+                            </div>
+                            <div class="imtra">
+                                <img src="../img/product/3.png" alt=""> 
+                                <span>急减速 <em style="color: #6cd40f" >{{v.slowdown}}</em>次</span>
+                            </div>
+                            <div class="imtra">
+                                <img src="../img/product/4.png" alt=""> 
+                                <span>急转弯 <em style="color: #fc0203">{{v.turn}}</em>次</span>
+                            </div>
+                        </div>
+                        <div class="tra_end">
+                            <div class="tra_start">
+                                <div class="end_timer">
+                                    <span class="end_time">{{v.end_time}}</span>
+                                    {{if v.isONReal == false}}
+                                    <span class="show_dots">熄火停车</span>
+                                    {{else}}
+                                    <span class="show_dots">{{v.offLonLat}}</span>
+                                    {{/if}}
+                                </div>
+                                <span class="iconfont icon-qianjin"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    {{/if}}
+</script>
+
+</html>

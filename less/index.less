@@ -1,0 +1,354 @@
+
+
+
+// 底部修改
+// .mui-bar-tab{
+//     height: 2.5rem;
+// }
+.mui-bar{
+    box-shadow:none;
+}
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{
+    font-size: .6rem;
+    letter-spacing: .025rem;
+    height: .7rem;
+    line-height: .7rem;
+}
+// .mui-bar-tab .mui-tab-item.mui-active{
+//     color: #ea5504;
+// }
+
+//头部修改
+.che_container{
+    .che_header{
+        color: #fff;
+        background-color: #ea5504;
+        width: 100%;
+        font-size: 0;
+        // padding: 0 30px;
+        div{
+            display: inline-block;
+            text-align: center;
+            font-size: .8rem;
+            height: 100%;
+            // background-color: black;
+            line-height: 2.2rem;
+        }
+        .cheSite{
+            width: 20%;
+            .welcom{
+                .mui-icon{
+                    font-size: .85rem;
+                }
+            }
+            
+        }
+        .cheSearch{
+            position: relative;
+            width: 70%;
+            line-height: 1.35rem;
+            vertical-align: middle;            
+            .searchText{
+                width: 11.15rem;
+                height: 1.5rem;
+                border-radius: 1rem;
+                margin: 0;
+                padding: .45rem 3rem;
+                color: #000000;
+                font-size: .55rem;
+            }
+            .mui-icon{
+                font-size: .85rem;
+                position: absolute;
+                top: .45rem;
+                color: #ccc;
+                right:1.5rem;
+            }
+            .mui-icon-search{
+                right:10.8rem;
+            }
+        }
+        .cheIcon{
+            // padding-right: 12px;
+            width: 10%;
+            position: relative;
+            .mui-icon{
+                font-size:.85rem;
+                // padding-left: 10px;
+            }
+            .dian{
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                // border-radius: 50%;
+                border-radius: 12px;
+                background-clip: padding-box;
+                background-color: yellow;
+                top: 0.7rem;
+                right: .6rem;
+            }
+        }
+    }
+    .che_main{
+        .mui-scroll-wrapper{
+            .mui-scroll{
+                .mui-slider{
+                    height: 7.5rem;
+                    .mui-slider-group{
+                        height: 7.5rem;
+                        
+                        .mui-slider-item{
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                img{
+                                    //设置轮播图的大小
+                                    width: 100%;
+                                    height:auto;
+                                    max-height:100%;
+                                    max-width:100%;
+                                    display: inline-block;
+                                }
+                            }
+                           
+                        }
+                        .mui-active{
+                            width: 100%;
+                            height:100%;
+                            display: inline-block;
+                        }
+                    }
+                    .mui-indicator{
+                        width: .35rem;
+                        height:.35rem;
+                        border: .05rem solid #fff;
+                        border-radius: 50%;
+                        background-color: #fff;
+                    }
+                    .mui-active{
+                        width: .8rem;
+                        background-color: #fff;
+                        border: none;
+                        border-radius: .175rem;
+                    }
+                }
+                //导航开始
+                .che_navs{
+                    height: 9rem;
+                    background-color: #fff;
+                    // border-bottom: 1px solid #000000;    
+                    .cheUls{
+                        width: 100%;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: flex;
+                        flex-wrap:wrap;
+                        vertical-align: middle;
+                        
+                        .cheNavli{
+                            width: 20%;
+                            text-align: center;
+                            // line-height:200px;
+                            padding: .8rem 0;
+                            height: 4.5rem;
+                            box-sizing: border-box;
+                            a{
+                                height:100%;
+                                text-align: center;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+                                img{
+                                    display: inline-block;
+                                    width: 1.75rem;
+                                }
+                                span{
+                                    color: #393939;
+                                    font-size: .55rem;
+                                    height: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .indexObd{
+                    height: 5rem;
+                    margin-top: .5rem;
+                    background: url('../img/img/obd.png') repeat center ;
+                    background-size:cover;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1.5rem 0 .8rem 0;
+                    img{
+                        width: 5.1rem;
+                        height: 1.1rem;
+                    }
+                    span{
+                        height: 1.1rem;
+                        width: 4rem;
+                        font-size: .6rem;
+                        background-color: #fff;
+                        color: #fca663;
+                        border-radius: .5rem;
+                        text-align: center;
+                        line-height: 1.1rem;
+                    }
+                }
+                //自家车
+                .che_conters{
+                    margin-top: .5rem;
+                    background-color: #fff;
+                    height:5rem;
+                    font-size: .55rem;
+                    color: #393939;
+                    font-family:"Microsoft Yahei";
+                    .cheBiao{
+                        height: 100%;
+                        width: 5rem;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 3.1rem;
+                        }
+                    }
+                    .carCont{
+                        height: 100%;
+                        width: 13.75rem;
+                        // padding-right: 24px;
+                        letter-spacing: .05rem;
+                        border-bottom: .025rem solid #ccc;
+                            
+                        
+                        .carCont_son{
+                            height: 2.5rem;
+                            border-bottom: .025rem solid #ccc;
+                            line-height: 2.5rem;
+                            .carCont_title{
+                                // width:
+                                padding-right: 5.4rem;
+                            }
+                            .carCont_metre{
+                                .mui-icon{
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                        //汽车状况
+                        .carCont_secend{
+                            margin: .4rem 0 ;
+                            height: 1.6rem;
+                            line-height: 1.6rem;
+                            .mui-icon{
+                                font-size: .7rem;
+                                width: 1.25rem;
+                                height: 1.25rem;
+                                text-align: center;
+                                line-height: 1.25rem;
+                                color: #fff;
+                                background-color: #ffca12;
+                                border-radius: 50%;
+                            }
+                            .carLife{
+                                display: inline-block;
+                                width: 50%;
+                                // padding-right: 150px;
+                                border-right: 1px solid #ccc;
+                                span {
+                                    em{
+                                        color: #ffca12;
+                                    }
+                                }
+                            }
+                            .carSafe{
+                                span{
+                                    em{
+                                        color: #ffca12;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //自家地址
+                .che_aside{
+                    padding: .65rem ;
+                    background-color: #fff;
+                    font-size: .55rem;
+                    color: #393939;
+                    // letter-spacing: .05rem;
+                    span{
+                        display: inline-block;
+                        height: 1.8rem;
+                        line-height: 1.8rem;
+                    }
+                    .aside_save{
+                        padding-right: 1.25rem;
+                        
+                        border-right: 1px solid #ccc;
+                        .mui-icon{
+                            font-size: 1rem;
+                            color: #ea5504;
+                        }
+                    }
+                    .aside_wher{
+                        padding: 0 1rem;
+                    }
+                    .aside_time{
+                        // padding-left: .25rem;
+                        float: right;
+                        .mui-icon{
+                            font-size: .9rem;
+                        }
+                    }
+                }
+                .goLogin{
+                    margin-top: .5rem;
+                    height: 3rem;
+                    padding: .5rem;
+                    background-color: #fff;
+                    >div{
+                        width: 100%;
+                        text-align: center;
+                        line-height: 2rem;
+                        
+                        a{
+                            display: inline-block;
+                            height: 2rem;
+                            width: 100%;
+                            border-radius: .25rem;
+                            font-size: .65rem;
+                            color: #fff;
+                            background-color: #ea5504;
+                            letter-spacing: .05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainFoter{
+        height: 2rem;
+        width: 100%;
+        font-size: .55rem;
+        background-color: #faf9f0;
+        text-align: center;
+        line-height: 2rem;
+        position: absolute;
+        bottom: 2.5rem;
+        >span{
+            a{
+                font-size: .55rem;
+                color: #e55252;
+            }
+        }
+    }
+}

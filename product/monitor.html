@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/product/monitor.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>部件监控</h4>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+
+        <div class="che_main">
+            <div class="carsphoto"><img src="../img/img/car.png" alt=""></div>
+            <div class="startMon">开始检测</div>
+            <div class="scroll hiden">
+                <div class="">车身系统</div>
+                <div class="">燃油, 空气或排放控制 </div>
+                <div class="">燃油或空气 </div>
+                <div class="">点火系统 </div>
+                <div class="">排放控制</div>
+                <div class="">变速箱</div>
+                <div class="">混合动力系统 </div>
+                <div class="">燃油，空气或排放控制 </div>
+                <div class="">车速及怠速控制</div>
+                <div class="">气缸停缸</div>
+                <div class="">车身系统</div>
+                
+            </div>
+        </div>
+        <div class="xian"></div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+    $(function(){
+        $('.startMon').on('tap',function(){
+            // location.href = "./monitorson.html"
+            $(this).hide();
+            $('.scroll').show().find('div').addClass('keys');
+            $('.loading').show();
+            setTimeout(function(){
+
+                location.href="./newMonitor.html";
+            },4000)
+            
+        })
+    })
+</script>
+</html>

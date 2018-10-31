@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/mycss/orders.css">
+    <style>
+        .nohave {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: .65rem;
+            /* background-color: #f5f5f5; */
+        }
+    </style>
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="/myself.html">
+                <span class="iconfont icon-houtui"></span>
+                <span class="goback">我的订单</span>
+            </a>
+        </div>
+
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main">
+            <!-- <div class="mui-scroll-wrapper"> -->
+                <!--子盒子-->
+                <!-- <div class="mui-scroll"> -->
+                    <div class="che_order">
+                        <div class="order_slider">
+                            <!-- tab栏 -->
+                            <div id="segmented">
+                                <div class="mui-scroll orderTab">
+                                    <a class="mui-control-item mui-active w33" href="#item1mobile">
+                                        全部订单
+                                    </a>
+                                    <a class="mui-control-item w33" href="#item2mobile" id="noSuccess">
+                                        未完成
+                                    </a>
+                                    <a class="mui-control-item w33" href="#item3mobile" id="success">
+                                        已完成
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 内容 -->
+                            <div class="mui-scroll-wrapper">
+                                    <div class="mui-scroll">
+                                    
+                                        <div class="mui-slider-group ordersMain hiden">
+                                            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+                                                <!-- <div class="order_content">
+                                                    <div class="content_one">
+                                                        <div class="headConten">
+                                                            <div class="head_left che_display">
+                                                                <span class="iconfont icon-icon"></span>
+                                                                <span>纳克修理厂</span>
+                                                                <span class="mui-icon mui-icon-arrowright"></span>
+                                                            </div>
+                                                            <div class="waitOrder">待付款</div>
+                                                        </div>
+                                                        <div class="order_number">订单编号:4231231231231</div>
+                                                    </div>
+                                                    
+                                                    <div class="product_order che_display">
+                                                        <div class="product_img">
+                                                            <img src="../img/img/logo.png" alt="">
+                                                        </div>
+                                                        <div class="product_manner">
+                                                            【特惠套餐】保养方式 到店预约
+                                                        </div>
+                                                        <div class="product_picer">
+                                                            <span>￥268.00</span>
+                                                            <del>￥268.00</del>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_order che_display">
+                                                        <div class="product_img">
+                                                            <img src="../img/img/logo.png" alt="">
+                                                        </div>
+                                                        <div class="product_manner">
+                                                            【特惠套餐】保养方式 到店预约
+                                                        </div>
+                                                        <div class="product_picer">
+                                                            <span>￥268.00</span>
+                                                            <del>￥268.00</del>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_bottom">
+                                                        <div class="orderOne che_display che_acolor">
+                                                            <span>保养时间：2018-06-22</span>
+                                                            <span class="order_length">共2件商品</span>
+                                                            
+                                                        </div>
+                                                        <div class="orderTwo che_display">
+                                                            <span>合计:
+                                                                <em class="che_color">￥866.00</em>
+                                                            </span>
+                                                        </div>
+                                                        <div class="orderThree che_display">
+                                                            <span class="iconfont icon-shanchu1 che_acolor"></span>
+                                                            <div class="order_btn che_display">
+                                                                <div class="noorder">取消订单</div>
+                                                                <div class="noorder">立刻支付</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div id="item2mobile" class="mui-slider-item mui-control-content">
+                                            </div>
+                                            <div id="item3mobile" class="mui-slider-item mui-control-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- </div>
+            </div> -->
+        </div>
+
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/orders.js"></script>
+
+<script type="text/html" id="allOrder">
+    {{if data.length == 0 }}
+    <div class="nohave">您还没有相关的订单</div>
+    {{else }}
+       {{each data as v i}}
+            <div class="order_content" data-id="{{v.pay_status}}">
+                <div class="content_one">
+                    <div class="headConten">
+                        <div class="head_left che_display">
+                            <span class="iconfont icon-icon"></span>
+                            {{if v.store}}
+                            <span class="store_name">{{v.store.store_name}}</span>
+                            {{/if}}
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </div>
+                        {{ if v.pay_status==1}}
+                        <div class=" che_acolor"> 已付款</div>
+                        {{else}}
+                        <div class="waitOrder">待付款</div>
+                        
+                        {{/if}}
+                    </div>
+                    <div class="order_number">订单编号:<span class="this_number">{{v.ordersn}}</span></div>
+                </div>
+                {{each v.goodsList as k j}}
+                <div class="product_order che_display">
+                    <div class="product_img">
+                        <img src="../img/img/meiyou.png" alt="">
+                    </div>
+                    <div class="product_manner">
+                        <!-- <span>【特惠套餐】</span> -->
+                        {{if !k.goods_name}}
+                            <span class="combo">{{k.goods_info}}</span>
+                        {{else}}
+                            <span class="combo">{{k.goods_name}}</span>
+                        {{/if}}
+
+                    </div>
+                    <div class="product_picer">
+                            <span class="onlyPice">￥{{k.sellings_price}}</span>
+                        <!-- <del>￥{{k.sellings_price}}</del> -->
+                    </div>
+                </div>
+                {{/each}}
+                
+                {{each v.comboList as k j}}
+                <div class="product_order che_display">
+                    <div class="product_img">
+                        <img src="../img/img/meiyou.png" alt="">
+                    </div>
+                    <div class="product_manner">
+                        <!-- <span>【特惠套餐】</span> -->
+                        {{if !k.card_name}}
+                            <span class="combo">{{k.combo_name}}</span>
+                        {{else}}
+                            <span class="combo">{{k.combo_name}}</span>
+                        {{/if}}
+
+                    </div>
+                    <div class="product_picer">
+                        <span class="onlyPice">￥{{k.combo_price}}</span>
+                        <!-- <del>共{{k.use_num}}张</del> -->
+                        <div>&nbsp;X&nbsp;{{k.model}}</div>
+                    </div>
+                </div>
+                {{/each}}
+                {{if v.order_type ==6}}
+                    {{each v.cardInfo as k j}}
+                    <div class="product_order che_display">
+                        <div class="product_img">
+                            <img src="../img/img/meiyou.png" alt="">
+                        </div>
+                        <div class="product_manner">
+                            <!-- <span>【特惠套餐】</span> -->
+                            {{if !k.card_name}}
+                                <span class="combo">{{k.card_name}}</span>
+                            {{else}}
+                                <span class="combo">{{k.card_name}}</span>
+                            {{/if}}
+
+                        </div>
+                        <div class="product_picer">
+                            <span class="onlyPice">￥{{k.card_price}}</span>
+                            <!-- <del>共{{k.use_num}}张</del> -->
+                            <div>共{{k.use_num}}张</div>
+                        </div>
+                    </div>
+                    {{/each}}
+                {{/if}}
+
+                <div class="order_bottom">
+                    <div class="orderOne che_display che_acolor">
+                        <span>订单时间：</span>
+                        <span class="orderTime">{{v.add_time}}</span>
+                        {{if v.order_type==6}}
+                        <span class="order_length">共{{v.goodsList.length+v.cardInfo.length}}件商品</span>
+                        {{else if v.order_type==1 || v.order_type==11}}
+                            {{if v.comboList}}
+                            <span class="order_length">共{{v.comboList.length+v.goodsList.length}}件商品</span>
+                            {{else}}
+                            <span class="order_length">共{{v.goodsList.length}}件商品</span>
+                            {{/if}}
+                        {{else}}
+                            {{if v.goodsList}}
+                            <span class="order_length">共{{v.goodsList.length}}件商品</span>
+                            {{else}}
+                            <span class="order_length">共0件商品</span>
+                            {{/if}}
+                        {{/if}}
+                        
+                    </div>
+                    {{if v.order_type ==6}}
+                    <div class="orderTwo che_display">
+                        <span>合计:
+                            <em class="che_color all_price">￥0</em>
+                        </span>
+                        <span>优惠:
+                            <em class="che_color all_price">￥0</em>
+                        </span>
+                        <span>实际支付:
+                            <em class="che_color all_price moneysThis">￥0</em>
+                        </span>
+                    </div>
+                    {{ else }}
+                    <div class="orderTwo che_display">
+                        <span>合计:
+                            {{if v.totalprice}}
+                            <em class="che_color all_price">￥{{v.totalprice}}</em>
+                            {{else}}
+                            <em class="che_color all_price">￥0</em>
+                            {{/if}}
+                        </span>
+                        <span>优惠:
+                            <em class="che_color all_price">￥{{v.discount}}</em>
+                        </span>
+                        <span>实际支付:
+                            <em class="che_color all_price moneysThis practical">￥{{(v.totalprice-v.discount).toFixed(2)}}</em>
+                        </span>
+                    </div>
+
+                    {{/if}}
+                    <div class="orderThree che_display">
+                        <span class="iconfont icon-shanchu1 che_acolor"></span>
+                        <div class="order_btn che_display">
+                                {{ if v.status==4}}
+                                <div class="noorder orderPing">订单评价</div>
+                                {{else if v.status==5}}
+                                <div class="noorder">已完成</div>
+                                {{else if v.status==3}}
+                                <div class="noorder">订单已撤销</div>
+                                {{else}}
+                                <div class="noorder quxiao">取消订单</div>
+                                <div class="noorder gopayNow">立刻支付</div>
+                                {{/if}}
+                        </div>
+                    </div>
+                </div>
+                <div class="hiden sellerFather" data-sellid="{{v.id}}">
+                    {{if v.sellerList }}
+                        {{each v.sellerList as k j}}
+                        <span class="sellerList" data-sellerid="{{k.seller_id}}" data-id="{{k.is_score}}" >{{k.seller_account}}</span>
+                        {{/each}}
+                    {{/if}}
+                </div>
+            </div>
+        {{/each}} 
+    {{/if}}
+</script>
+<!-- <script type="text/html" id="noOrder">
+    {{if data.length == 0 }}
+    <div class="nohave">您还没有相关的订单</div>
+    {{else }}
+       {{each data as v i}}
+            <div class="order_content" data-id="{{v.pay_status}}">
+                <div class="content_one">
+                    <div class="headConten">
+                        <div class="head_left che_display">
+                            <span class="iconfont icon-icon"></span>
+                            <span class="store_name">{{v.store.store_name}}</span>
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </div>
+                        {{ if v.pay_status==1}}
+                        <div class=" che_acolor"> 已付款</div>
+                        {{else}}
+                        <div class="waitOrder">待付款</div>
+                        
+                        {{/if}}
+                    </div>
+                    <div class="order_number">订单编号:<span class="this_number">{{v.ordersn}}</span></div>
+                </div>
+                {{each v.goodsList as k j}}
+                <div class="product_order che_display">
+                    <div class="product_img">
+                        <img src="../img/img/meiyou.png" alt="">
+                    </div>
+                    <div class="product_manner">
+                        <span>【特惠套餐】</span>
+                        {{if !k.goods_name}}
+                            <span class="combo">{{k.goods_info}}</span>
+                        {{else}}
+                            <span class="combo">{{k.goods_name}}</span>
+                        {{/if}}
+                        
+                    </div>
+                    <div class="product_picer">
+                            <span class="onlyPice">￥{{k.sellings_price}}</span>
+                        <del>￥{{k.sellings_price}}</del>
+                    </div>
+                </div>
+                {{/each}}
+                <div class="order_bottom">
+                    <div class="orderOne che_display che_acolor">
+                        <span>保养时间：</span>
+                        <span class="orderTime">{{v.add_time}}</span>
+                        <span class="order_length">共{{v.goodsList.length}}件商品</span>
+                        
+                    </div>
+                    <div class="orderTwo che_display">
+                        <span>合计:
+                            <em class="che_color all_price">￥{{v.totalprice}}</em>
+                        </span>
+                    </div>
+                    <div class="orderThree che_display">
+                        <span class="iconfont icon-shanchu1 che_acolor"></span>
+                        <div class="order_btn che_display">
+                            <div class="noorder">取消订单</div>
+                            <div class="noorder">立刻支付</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    {{/if}}
+</script> -->
+<!-- <script type="text/html" id="succesOrder">
+    {{if data.length == 0 }}
+    <div class="nohave">您还没有相关的订单</div>
+    {{else }}
+       {{each data as v i}}
+            <div class="order_content">
+                <div class="content_one">
+                    <div class="headConten">
+                        <div class="head_left che_display">
+                            <span class="iconfont icon-icon"></span>
+                            <span>{{v.store.store_name}}</span>
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </div>
+                        {{ if v.pay_status==1}}
+                        <div class=" che_acolor"> 已付款</div>
+                        {{else}}
+                        <div class="waitOrder">待付款</div>
+                        
+                        {{/if}}
+                    </div>
+                    <div class="order_number">订单编号:{{v.ordersn}}</div>
+                </div>
+                {{each v.goodsList as k j}}
+                <div class="product_order che_display">
+                    <div class="product_img">
+                        <img src="../img/img/meiyou.png" alt="">
+                    </div>
+                    <div class="product_manner">
+                        {{if !k.goods_name}}
+                            <span class="combo">{{k.goods_info}}</span>
+                        {{else}}
+                            <span class="combo">{{k.goods_name}}</span>
+                        {{/if}}
+                    </div>
+                    <div class="product_picer">
+                        <span>￥{{k.selling_price}}</span>
+                        <del>￥{{k.sellings_price}}</del>
+                    </div>
+                </div>
+                {{/each}}
+                <div class="order_bottom">
+                    <div class="orderOne che_display che_acolor">
+                        <span>保养时间：{{v.add_time}}</span>
+                        <span class="order_length">共{{v.goodsList.length}}件商品</span>
+                        
+                    </div>
+                    <div class="orderTwo che_display">
+                        <span>合计:
+                            <em class="che_color">￥{{v.totalprice}}</em>
+                        </span>
+                    </div>
+                    <div class="orderThree che_display">
+                        <span class="iconfont icon-shanchu1 che_acolor"></span>
+                        <div class="order_btn che_display">
+                            <div class="noorder">订单评价</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    {{/if}}
+</script> -->
+</html>

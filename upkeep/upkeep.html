@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/upkeep.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header">
+            <a class="icon_left" href="/shop/list.html">
+                <span class="mui-icon mui-icon-left-nav "></span>
+            </a>
+            <h4>智能保养方案</h4>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="upkeep-wrap">
+                        <div class="che-content">
+                            <div class="che-logo" style="background-image: url(&quot;http://api.chebazu.com.cn/uploads/store/20180614/a37b7d1f55c8c5cd19f7f176497a2e99.png&quot;);">
+                                <!-- <img src="#" alt=""> -->
+                            </div>
+                            <div class="che-mains">
+                                <div class="upkeep-car-name ">
+                                    <div class=" show_dots upkeepPai">标致 3008 2HP 手自一体 经典版经典版经典版经典版经典版经典版</div>
+                                    <span class="mui-icon mui-icon-arrowright che_text_spac"></span>
+                                </div>
+                                <div class="upkeep-real-km">
+                                    <span class="upkeep-km-tips">当前里程</span>
+                                    <!-- <input type="tpl" maxlength="6" id="mile-input" class="upkeep-real-km-input"> -->
+                                    <span class="font upkeep-km-icon">
+                                        <span class="upKm">520</span> km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brainpower">
+
+                        <!-- 把他们变成大坑 -->
+                        <div class="che_content_title">
+                            套餐
+                        </div>
+                        <ul class="che_form_wrap" id="oneTpl">
+                            <li class="upkeep_line_wrap" data-goosId={{v.goods_id}}>
+                                <div class="upkeep-form-item">
+                                    <div class="upkeep-label">
+                                        <div class="upkeep-mess che_display">
+                                            <span class="">
+                                                <span class=" iconfont icon-duihao now" data-id="555"></span>
+                                                <sapn class="jiyou">机油</sapn>
+                                            </span>
+                                            <span class="upkeep-oil-ver">4L </span>
+                                            <span id="changeOil" class="che_color">
+                                                <span>更换机油</span>
+                                                <span class="mui-icon mui-icon-arrowright"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="upkeep-right vertical-center">
+                                        <div>
+                                            <!-- <span class="old-del-price font-s">¥<span class="old-iconfont-RMB font-xs">438</span></span> -->
+                                            <span class="new-price che_color">¥
+                                                <span class="new-icon-price">329</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cmt-oil-round">
+                                    <ul>
+                                        <li class="cmt-line-shadow">
+                                            <div class="upkeep_main che_display">
+                                                <div class="cmt-oil-img" style="background-image: url(&quot;https://protected.lechebangstatic.com/car/car_oil_images/20171019/83cb0202-3249-4b10-b792-25ff0150d785.png-300x300&quot;);"></div>
+                                                <div class="cmt-oil-right che_display">
+                                                    <div class="cmt-oil-title  che_display">
+                                                        <span class="upkeep_names">原厂专用5W-40 SM级全合成</span>
+                                                        <span class="che_text_spac new-icon-price">4L </span>
+                                                    </div>
+                                                    <div class="cmt-oil-money che_text_spac che_display">
+                                                        <span class="">¥438</span>
+                                                        <div class="mui-right">x1 </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <!--   挖坑 -->
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <footer class="che_footer">
+            <div class="upkeep-page-bottom">
+                <div class="upkeepFont">
+                    <div class="fontSize">
+                        <span class=" iconfont icon-gouwuche" id="openPopover"></span>
+                        <span class="fly">0</span>
+                    </div>
+                </div>
+                <div class="centerUp">
+                    <div class="upkeepMoney">
+                        <span class="newMoney">￥
+                            <span class="newsPrice">0</span>
+                        </span>
+                        <span class="soMoney">套餐总价</span>
+                    </div>
+                    <div class="shengUp">
+                        <div class="delUpk">￥<span class="oldsMoney">0</span></div>
+                        <div>卡券总价<span class="shMoney"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uptimer">
+                    <div>去支付</div>
+                </div>
+                
+            </div>
+        </footer>
+        <!-- 弹出框 -->
+        <div id="pop" class="mui-popover ">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="che_content_title">
+                        商品
+                    </div>
+                    <ul class="che_form_wrap che_form_wrap_new">
+                        <div id="foters">
+                            <!-- <li class="upkeep_line_wrap">
+                                <div class="upkeep-form-item">
+                                    <div class="upkeep-right-new vertical-center">
+                                        <div>
+                                            <span class="old-del-price-new">
+                                                4L </span>
+                                            <span class="new-price che_color">
+                                                <span class="new-icon-price">¥</span>329 </span>
+                                        </div>
+                                        <span class="iconfont icon-delete che_iconClose"></span>
+                                    </div>
+                                    <div class="upkeep-label">
+                                        <div class="upkeep-mess">
+                                            <span class="upkeep-parts js-fitting"> 机油 </span>
+                                            <span class="che_text_spac">机场专用换购 </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="upkeep_line_wrap">
+                                <div class="upkeep-form-item">
+                                    <div class="upkeep-right-new vertical-center">
+                                        <div>
+                                            <span class="old-del-price-new"></span>
+                                            <span class="new-price che_color">
+                                                <span class="new-icon-price">¥</span>329 </span>
+                                        </div>
+                                        <span class="iconfont icon-delete che_iconClose"></span>
+                                    </div>
+                                    <div class="upkeep-label">
+                                        <div class="upkeep-mess">
+                                            <span class="upkeep-parts js-fitting"> 机油 </span>
+                                            <span class="che_text_spac">机场专用换购 </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li> -->
+                        </div>
+                        <!-- <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>
+                                        <span class="new-price">
+                                            <span class="new-icon-price">¥</span>329 </span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 工时费 </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>
+                                        <span class="new-price">免费</span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 保养检测 </span>
+                                        <span class=" upkeep-oil-ver-new iconfont icon-i"> </span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>- ¥<span class="new-icon-price footerOld">329</span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 乐享优惠 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+
+<script src="../js/upkeep.js"></script>
+<script type="text/html" id="tpl">
+    {{if data.length==0}}
+    <div class="volist">
+        <div class="volist_nomode">
+            <div class="volist_bgimg che_display">
+                <div class="backImg"></div>
+                <div>暂无商品~</div>
+            </div>
+            
+        </div>
+    </div>
+    {{else}}
+
+
+        <div class="che_content_title">
+            套餐
+        </div>
+        <ul class="che_form_wrap " id="oneTpl">
+            {{each data.comboList as j p}}
+            
+            <li class="upkeep_line_wrap fuck_you taocan" data-goosId={{j.combo_id}} data-price={{j.total_price}}>
+                <div class="upkeep-form-item">
+                    <div class="upkeep-right vertical-center">
+                        <div>
+                            <span class="new-price che_color">¥
+                                <span class="new-icon-price">{{j.combo_price}}</span></span>
+                        </div>
+                    </div>
+                    <span class="upkeep-label">
+                        <span class="upkeep-mess">
+                            <span class="upkeep-parts js-fitting">
+                                <span class=" iconfont icon-duihao " data-id={{j.combo_id}}></span>
+                                <span class="jiyou">{{j.combo_name}}</sapn>
+                                </span>
+                            <span id="changeOil" class="che_color">有效期 {{j.validity_day}}天</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cmt-oil-round">
+                    <ul>
+                        {{each j.cardsData as k s}}
+                        <li class="cmt-line-shadow ">
+                            <div class="upkeep_main che_display">
+                                <div class="cmt-oil-right che_display">
+                                    <div class="cmt-oil-title font-s show-dots">{{k.card_name}}
+                                        <span class="che_text_spac new-icon-price">￥{{k.card_price}} / 张 </span>
+                                        <span class="che_text_spac new-icon-price">共{{k.card_num}} 张 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        {{if data.cardList.length>0 }}
+        <div class="che_content_title">
+            卡券
+        </div>
+        <ul class="che_form_wrap " id="oneTpl">
+            {{each data.cardList as j p}}
+            
+            <li class="upkeep_line_wrap fuck_you coupon_list" data-goosId={{j.card_id}} data-price={{j.card_price}}>
+                <div class="upkeep-form-item">
+                    <div class="upkeep-right vertical-center">
+                        <div>
+                            <span class="new-price che_color">¥
+                                <span class="new-icon-price">{{j.card_price}}</span></span>
+                        </div>
+                    </div>
+                    <div class="showTime vertical-center">
+                        <span class="show_subtract">—</span>
+                        <input type="number" id="shopNum" readonly>
+                        <span class="show_add">+</span>
+                    </div>
+                    <span class="upkeep-label">
+                        <span class="upkeep-mess">
+                            <span class="upkeep-parts js-fitting">
+                                <span class=" iconfont icon-duihao " data-id={{j.card_id}}></span>
+                                <span class="jiyou">{{j.card_name}}</sapn>
+                                </span>
+                            <span id="changeOil" class="che_color">无期限</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        {{/if}}
+    {{/if}}
+</script>
+
+
+</html>

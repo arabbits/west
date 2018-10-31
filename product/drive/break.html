@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/product/base.css">
+    <link rel="stylesheet" href="../../css/product/break.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>急踩刹车分析</h4>
+            <a class="icon_right" href="../../product.html">
+                <span class="iconfont icon-fenxiang"></span>
+            </a>
+        </div>
+        <div class="loading hiden">
+                <img src="../../img/img/jiazai.gif" alt="">
+            </div>
+        <div class="che_main hiden">
+            <div class="break_head">
+                <div>最近7天您平均每次驾驶急刹踩车</div>
+                <div>0.2次/十公里</div>
+                <div class="ping_break">
+                    <div>标准值 </div>
+                    <span class="yello"></span>
+                    <div>您的平均值 </div>
+                    <span class="orang"></span>
+                </div>
+            </div>
+            <div class="drive_main">
+
+                <div class="eachres">
+                    <!-- <div id="main" style="width: 646px;height:436px;"> -->
+                    <div class="chart" id="breakChart"></div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="wenzi">
+                <span>
+                    最近7天您平均每次驾驶急刹踩车最近7天您平均每次驾驶急刹踩车最近7天您平均每次驾驶急刹踩车最近7天您平均每次驾驶急刹踩车最近7天您平均每次驾驶急刹踩车最近7天您平均每次驾驶急刹踩车
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../lib/js/echarts.min.js"></script>
+<script src="../../js/product/comment.js"></script>
+<script>
+    $(function(){
+    //急转弯数据
+    $.ajax({
+        url:api+'indexIdleLong',
+        type:'post',
+        headers:{'userauthkey':token},
+        
+        beforeSend:function(){
+            $('.loading').show();
+        },
+        data:{
+            user_id:user_id
+        },
+        success:function(data){
+            $('.loading').hide();
+            $('.che_main').show();
+            if(data.result){
+                console.log(data)
+                var x = []
+                var y = []
+                
+                data.data.forEach(function(val,i){
+                    // console.log('forEach遍历:'+i+'--'+val.c_time);
+                    x[i] = val.c_time
+                    y[i] = parseInt(val.mile)
+                });
+                console.log(x)
+                console.log(y)
+                var maxs = Math.max.apply(null,y)
+                console.log(maxs)
+                
+                
+                
+                // 使用刚指定的配置项和数据显示图表。
+                var myChart = echarts.init(document.getElementById('breakChart')); 
+        
+                myChart.setOption(option(x,y,maxs));
+            }
+            
+        }
+    })
+    
+    
+})
+</script>
+
+</html>

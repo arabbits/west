@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/index/reservation.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header">
+            <a class="icon_left" href="/index.html">
+                <span class=" mui-icon mui-icon-left-nav "></span>
+            </a>
+            <h4>维修预约</h4>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../../img/img/jiazai.gif" alt="">
+        </div>
+
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="upkeep-wrap">
+                        <div class="che-content">
+                            <div class="che-logo" style="background-image: url(&quot;https://ocpvd5a60.qnssl.com/0fd0b5cc-a1a7-448a-bfd8-6114c477ba54.png&quot;);">
+                            </div>
+                            <div class="che-mains">
+                                <div class="upkeep-car-name ">
+                                    <div class=" show_dots upkeepPai">标致 3008 2HP 手自一体 经典版经典版经典版经典版经典版经典版</div>
+                                    <span class="mui-icon mui-icon-arrowright che_text_spac"></span>
+                                </div>
+                                <div class="upkeep-real-km">
+                                    <span class="upkeep-km-tips">当前里程</span>
+                                    <span class="font upkeep-km-icon">
+                                        <span class="upKm">520</span> km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brainpower">
+                        <div class="che_content_title">
+                            汽车部件
+                        </div>
+                        <!-- <div class="reser_frist che_display">
+                                <div class="frist_bord" data-id="1">发动机<span class="frist_num">8</span></div>
+                                <div data-id="2">异响<span class="frist_num">8</span></div>
+                                <div data-id="3">灯亮<span class="frist_num">8</span></div>
+                                <div data-id="4">漏水<span class="frist_num">8</span></div>
+                                <div data-id="5">空调电器<span class="frist_num">8</span></div>
+                                <div data-id="6">漏油<span class="frist_num">8</span></div>
+                                <div data-id="7">到店保养<span class="frist_num">8</span></div>
+                                <div data-id="8">更换电瓶<span class="frist_num">8</span></div>
+                        </div> -->
+                        <!-- tab栏 -->
+                        <!-- <div id="segmented"> -->
+                        <div id="segmented">
+                                <div class="reser_frist che_display ">
+                                    <a class="mui-control-item frist_bord" href="#item1mobile" data-id="1">
+                                        机修<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item2mobile" id="noSuccess" data-id="2">
+                                        异响<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item3mobile" id="success" data-id="3">
+                                        灯亮<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item4mobile" id="success" data-id="4">
+                                            漏水<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item5mobile" id="success" data-id="5">
+                                            空调电器<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item6mobile" id="success" data-id="6">
+                                            漏油<span class="frist_num">0</span>
+                                    </a>
+                                    <a class="mui-control-item" href="#item7mobile" id="success" data-id="7">
+                                            到店保养<span class="frist_num">0</span>
+                                    </a>
+                                </div>
+                        </div>
+                        <!-- </div> -->
+
+                        <div class="che_content_title">
+                            故障分类 (可多选)
+                        </div>
+
+                        <div class="mui-slider-group ordersMain">
+                            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                                <div class="reser_secend che_display">
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan" data-id="1"></span>
+                                        <span>动力不足</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan" data-id="2"></span>
+                                        <span>油耗高</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan" data-id="3"></span>
+                                        <span>怠速不稳</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>加速不良</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>易熄火</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>抖动</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>点不了火</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>其他故障</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item2mobile" class="mui-slider-item mui-control-content">
+                                <div class="reser_secend che_display">
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>车身</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>发动机</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>底盘</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>轮胎</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>悬挂</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>变速箱</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>刹车</span>
+                                    </div>
+                                    <div class="reser_all che_display">
+                                        <span class="iconfont reser_yuan"></span>
+                                        <span>仪表盘</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item3mobile" class="mui-slider-item mui-control-content">
+                                    <div class="reser_secend che_display">
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>车身晒打算</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>发动机</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>底盘</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>轮胎</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>悬挂</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>变速箱</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>刹车</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>仪表盘</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div id="item4mobile" class="mui-slider-item mui-control-content">
+                                    <div class="reser_secend che_display">
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>而我却二群</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>发动机</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>底盘</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>轮胎</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>悬挂</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>变速箱</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>刹车</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>仪表盘</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div id="item5mobile" class="mui-slider-item mui-control-content">
+                                    <div class="reser_secend che_display">
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>发动机</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>手机呦</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>底盘</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div id="item6mobile" class="mui-slider-item mui-control-content">
+                                    <div class="reser_secend che_display">
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>发动机</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>手机呦</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>底盘</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div id="item7mobile" class="mui-slider-item mui-control-content">
+                                    <div class="reser_secend che_display">
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>发动机</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>手机呦</span>
+                                        </div>
+                                        <div class="reser_all che_display">
+                                            <span class="iconfont reser_yuan"></span>
+                                            <span>底盘</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reser_area">
+                            <textarea id="reser_text" cols="30" rows="10" placeholder=""></textarea>
+                            <div class="reser_describe">
+                                <span class="iconfont icon-wenti reser_wenti"></span>
+                                <span>添加故障描述</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="server_footer">
+            <div class="che_footer">
+                <div class="message_div">
+                    <a href="javascript:;">
+                        <span class="footer_fonts">确认添加</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/index/reservation.js"></script>
+<script type="text/html" id="tpl">
+    <div class="che-content" data-cartid="{{data.cart_id}}">
+        <div class="che-logo" style="background-image: url(&quot;https://ocpvd5a60.qnssl.com/0fd0b5cc-a1a7-448a-bfd8-6114c477ba54.png&quot;);">
+            <!-- <img src="#" alt=""> -->
+        </div>
+        <div class="che-mains">
+            <div class="upkeep-car-name ">
+                <div class=" show_dots upkeepPai">{{data.type_name}}</div>
+                <span class="mui-icon mui-icon-arrowright che_text_spac"></span>
+            </div>
+            <div class="upkeep-real-km">
+                <span class="upkeep-km-tips">当前里程</span>
+                <!-- <input type="tpl" maxlength="6" id="mile-input" class="upkeep-real-km-input"> -->
+                <span class="font upkeep-km-icon">
+                    <span class="upKm">{{data.cart_mile}}</span> km</span>
+            </div>
+        </div>
+    </div>
+</script>
+</html>

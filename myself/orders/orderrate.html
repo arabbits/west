@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/mycss/orderrate.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:history.go(-1);">
+                <span class="mui-icon mui-icon-back "></span>
+                <span class="rate_title">订单评价</span>
+            </a>
+            <a class="icon_right">
+                <span class="che_color">提交</span>
+            </a>
+        </div>
+
+        <div class="che_main">
+            <div class="rate_main">
+                <div class="score_father">
+                    <div class="order_score">
+                        <div class="score_name">商品评分</div>
+                        <div class="score_photo">
+                            <span class="iconfont icon-xingxingshixin"></span>
+                            <span class="iconfont icon-xingxingshixin"></span>
+                            <span class="iconfont icon-xingxingshixin"></span>
+                            <span class="iconfont icon-xingxingshixin"></span>
+                            <span class="iconfont icon-xingxingshixin"></span>
+                        </div>
+                        <div class="rateunder"></div>
+                    </div>
+                </div>
+                <div class="rateComment">
+                    <div class="commentTitle">更多评价</div>
+                    
+                    <div class="ratePrint">
+                        <textarea class="textarea" id="" placeholder="分享经验心得,给万千买家一个参考"></textarea>
+                        <!-- <div class="photoBox">
+                            <div class="photoFamily">
+                                <div class="familySon">
+                                </div>
+                            </div>
+                            <label>
+                                <div class="icon_fonts"><span class="iconfont icon-shouji1"></span></div>
+                                
+                                <div class="texttitle">添加图片</div>
+                                <input type="file" class="gofor" id="upimg4" accept="image/*">
+                            </label>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/js/jquery.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/myjs/orderrate.js"></script>
+<script type="text/html" id="tpls">
+    {{each sellerList as v i}}
+        <div class="order_score" data-id="{{v.id}}" data-sellerid="{{v.sellerid}}">
+            <div class="score_name">{{v.seller_account}}</div>
+            <div class="score_photo">
+                <span class="iconfont icon-xingxingshixin"></span>
+                <span class="iconfont icon-xingxingshixin"></span>
+                <span class="iconfont icon-xingxingshixin"></span>
+                <span class="iconfont icon-xingxingshixin"></span>
+                <span class="iconfont icon-xingxingshixin"></span>
+            </div>
+            <div class="rateunder"></div>
+        </div>
+    {{/each}}
+</script>
+
+</html>

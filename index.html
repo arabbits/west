@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="20"> -->
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./less/index.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="loading hiden">
+        <img src="./img/img/jiazai.gif" alt="">
+    </div>
+    <div class="che_container hiden">
+
+        <div class="che_header">
+            <div class="cheSite">
+                <span class="welcom">
+                    <span class="wxlocation ">正在定位</span>
+                    <!-- <span class="mui-icon iconfont icon-xiaosanjiao"></span> -->
+                </span>
+            </div>
+            <div class="cheSearch">
+                <input type="text" class="searchText" placeholder="请输入您的问题">
+                <span class="mui-icon mui-icon-search"></span>
+                <span class="mui-icon mui-icon-mic"></span>
+            </div>
+            <div class="cheIcon">
+                <span class="mui-icon iconfont icon-lingdang"></span>
+                <span class="dian"></span>
+            </div>
+        </div>
+        <div id="allmap"></div>
+        
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <!-- 轮播图 -->
+                    <!--轮播图-->
+                    <div class="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#">
+                                    <img src="./img/img/shouyeLunbo1.png" />
+                                </a>
+                            </div>
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="./img/img/shouyeLunbo1.png" />
+                                </a>
+                            </div>
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="./img/img/shouyeLunbo1.png" />
+                                </a>
+                            </div>
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="./img/img/shouyeLunbo1.png" />
+                                </a>
+                            </div>
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#">
+                                    <img src="./img/img/shouyeLunbo1.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mui-slider-indicator">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+                    <!-- 导航 -->
+                    <div class="che_navs">
+                        <ul class="cheUls">
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="1">
+                                    <img src="./img/newimg/index1.png" alt="">
+                                    <span>汽车养护</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="2">
+                                    <img src="./img/newimg/index2.png" alt="">
+                                    <span>预约维修</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="3">
+                                    <img src="./img/newimg/index03.png" alt="">
+                                    <span>钣金喷漆</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="4">
+                                    <img src="./img/newimg/index04.png" alt="">
+                                    <span>美容装饰</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="5">
+                                    <img src="./img/newimg/index05.png" alt="">
+                                    <span>店家商品</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="6">
+                                    <img src="./img/newimg/index06.png" alt="">
+                                    <span>紧急救助</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;"  data-id="7">
+                                    <img src="./img/newimg/index07.png" alt="">
+                                    <span>智能停车</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="8">
+                                    <img src="./img/newimg/index08.png" alt="">
+                                    <span>周边加油</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="9">
+                                    <img src="./img/newimg/index09.png" alt="">
+                                    <span>到店洗车</span>
+                                </a>
+                            </li>
+                            <li class="cheNavli">
+                                <a href="javascript:;" data-id="10">
+                                    <img src="./img/newimg/index10.png" alt="">
+                                    <span>优惠活动</span>
+                                </a>
+                            </li>
+                            <!-- <li class="cheNavli">
+                                <a href="javascript:;" data-id="10">
+                                    <img src="./img/newimg/index10.png" alt="">
+                                    <span>滴滴出行</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- obd购买页面功能 -->
+                    <div class="indexObd">
+                        <img src="./img/img/tuoguanziti.png" alt="">
+                        <span>查看详情</span>
+                    </div>
+                    <!-- <div class="indexCoupon indexObd">
+                        <img src="./img/img/tuoguanziti.png" alt="">
+                        <span> 优惠券 </span>
+                    </div> -->
+                    <!-- 自己车 -->
+                    <!-- <div class="che_conters mui-clearfix"> -->
+                        <!-- 车标 -->
+                        <!-- <div class="cheBiao pay_left">
+                            <img src="img/img/weicha.png" alt="">
+                        </div> -->
+                        <!-- 公里 -->
+                        <!-- <div class="carCont pay_right ">
+                            <div class="carCont_son">
+                                <span class="carCont_title">江淮-瑞风M6</span>
+                                <span class="carCont_metre">23214KM
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </span>
+                            </div>
+                            <div class="carCont_secend">
+                                <span class="carLife">
+                                    <span class="mui-icon iconfont icon-mulu"></span>
+                                    <span>汽车状况
+                                        <em>良好</em>
+                                    </span>
+                                </span>
+                                <span class="carSafe ">
+                                    <span class="mui-icon iconfont icon-suo"></span>
+
+                                    <span>汽车防盗
+                                        <em>已开启</em>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- 地址 -->
+                    <!-- <div class="che_aside mui-clearfix">
+                        <div>
+                            <span class="aside_save"> <span class="mui-icon  iconfont icon-dizhi"></span> 车辆位置</span>
+                            <span class="aside_wher" >静安区建安路221号</span>
+                            <span class="aside_time">4-24 08:04 <span class="mui-icon mui-icon-arrowright"></span></span>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item fonsIdex mui-active" href="index.html">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="product.html">
+                <span class="mui-icon iconfont icon-xiaoche1"></span>
+                <span class="mui-tab-label proTop">车吧族</span>
+            </a>
+            <a class="mui-tab-item" href="myself.html">
+                <span class="mui-icon mui-icon-contact"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+        <!-- <iframe>呵呵</iframe> -->
+    </div> 
+</body>
+<script src="./lib/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/common.js?v=1.1.3"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IidNXL5Yvwg4EKunQk5pGQUxUqrsWKAY"></script>
+<script src="./js/index.js?v=2.0.5"></script>
+
+</html>

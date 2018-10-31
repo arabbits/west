@@ -1,0 +1,63 @@
+.che_container .che_header .icon_left {
+  align-items: center;
+}
+.che_container .che_main {
+  padding: 0 .75rem;
+}
+.che_container .che_main .maintain_content {
+  margin-top: .75rem;
+  background-color: #fff;
+  padding: .5rem 0;
+  font-size: .7rem;
+}
+.che_container .che_main .maintain_content .mainTop {
+  justify-content: space-between;
+  padding: 0 .75rem;
+}
+.che_container .che_main .maintain_content .mainTop .icon-shanchu {
+  color: #939393;
+  font-size: .9rem;
+}
+.che_container .che_main .maintain_content .maintain_center {
+  margin-top: .5rem;
+  padding: 0 1rem;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist {
+  border-bottom: 1px solid #e5e5e5;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainOne {
+  text-align: center;
+  padding: .1rem 0 ;
+  position: relative;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainOne > span {
+  color: #ea5504;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainOne::after {
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  background-color: #ea5504;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainTwo {
+  padding: .5rem 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainTwo > span {
+  width: 25%;
+  text-align: center;
+  line-height: 1.2rem;
+}
+.che_container .che_main .maintain_content .maintain_center .mainFrist .mainTwo .main_detail {
+  width: 100%;
+  text-align: center;
+}
+.che_container .che_main .maintain_content .maintain_center:last-child > .mainFrist {
+  border: none;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/mycss/orderrate.css">
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:history.go(-1);">
+                <span class="mui-icon mui-icon-back "></span>
+                <span class="rate_title">定单评价</span>
+            </a>
+            <a class="icon_right" href="#">
+                <span class="che_color">发布</span>
+            </a>
+        </div>
+
+        <div class="che_main">
+            <div class="imgs clear">
+                <div class="img fl hide"></div>
+                <div class="add fl">添加图片</div>
+                <input type="file" class="" id="upimg3" accept="image/*">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<!-- <script src="../../lib/zepto/zepto.min.js"></script> -->
+<script src="../../lib/js/jquery.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<!-- <script src="../../js/common.js"></script> -->
+<script src="../../js/myjs/orderrate.js"></script>
+
+<script>
+    $('.add' ).on('click',function(){
+        var this_ = $(this );
+        var ua = navigator.userAgent.toLowerCase();
+        var isiOS = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);  // ios终端
+        if(!isiOS){
+            this_.next("input").attr('capture','camera');
+        }
+        this_.next("input").fadeOut();
+        // 这里是为了能够多次选定同一张图片
+        this_.after('<input type="file" class="hide" id="upimg4" accept="image/*">');
+        var imglen = this_.parent(".imgs").children('.img').children("img").length;
+        this_.next("input").click().off("change").on('change',function(){
+            var size = (this_.next("input")[0].files[0].size / 1024).toFixed(2);
+            if(size <= 5120){
+                var img = this_.next("input")[0].files[0];
+                var formData = new FormData();
+                formData.append("picture",img);
+                uploadPic(formData,this_,imglen);
+            } else {
+                swal({
+                    title: ' ',
+                    text: '您的图片超过5M',
+                    type: 'warning',
+                    showConfirmButton:false,
+                    timer:1500
+                });
+            }
+        });
+    });
+    // 、、设置上传图片的 宽高
+    function imgresize(){
+        setTimeout(function(){
+            var img = $('.img>img' );
+            img.each(function(){
+                $(this).height('20.8vw');
+                $(this).width('20.8vw');
+            });
+        },100);
+    }
+
+
+    var uploadPic = function(formData,this_,imglen){
+        $.ajax({
+            type:"post",
+            url:"{:Url('File/uploadPicture')}",
+            data:formData,
+            cache: false,
+            processData : false,
+            contentType : false,
+            beforeSend: function(XMLHttpRequest){
+                $('.swal2-confirm' ).css({'background-color':'#c1c1c1','border-left-color':'#c1c1c1','border-right-color':'#c1c1c1'})
+            },
+            success:function(data){
+                alert(data)
+                if(imglen >= 3){
+                    this_.hide();
+                }
+                swal.close();
+                var msg = $.parseJSON(data);
+                if(msg.code == 1){
+                    if(this_.hasClass('add')){
+                        //图片添加
+                        this_.parent('.imgs').children(".img").eq(imglen).removeClass('hide' )
+                                .append('<img src='+msg.data.path+' alt="图片" data-tab='+msg.data.id+'><span><img src="/home/images/common/default.png" alt=""></span>');
+
+                        // 删除图片
+                        $(".img span").on("click", function () {
+                            $(this).parent(".img").remove();
+                            this_.fadeIn();
+                            this_.before('<div class="img fl hide"></div>');
+                        });
+
+                        // 图片点击修改
+                        /*$(".img>img").on("click", function () {
+                         $(this).parent(".img").remove();
+                         this_.fadeIn().click();
+                         this_.before('<div class="img fl hide"></div>');
+                         });*/
+                    }else{
+                        //图片修改
+                        this_.find('img').remove();
+                        this_.append('<img src='+msg.data.path+' alt="图片" data-tab='+msg.data.id+'>');
+                    }
+                    imgresize();
+
+                } else {
+                    return '';
+                }
+            },
+            error:function(data){
+                console.log(JSON.stringify(data));
+            }
+        });
+    }
+</script>
+</html>

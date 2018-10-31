@@ -1,0 +1,94 @@
+
+
+.mui-scroll{
+    padding: 0 .5rem;
+    .addidentHeader{
+        .accTitle{
+            height: 1.7rem;
+            line-height: 1.7rem;
+            font-size: .7rem;
+            color: #a7a7a7;
+            padding-left: .8rem;
+        }
+        .noHave{
+            height: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            font-size: .75rem;
+            color: #ea5504;
+        }
+        .acc_main{
+            margin-bottom: .75rem;
+            .mui-table-view::before{
+                background-color: #fff;
+                height: 0;
+            }
+            .mui-table-view::after{
+                background-color: #fff;
+                height: 0;
+                
+            }
+            .mui-table-view{
+                box-shadow: 0px 0px .3rem 1px #ccc;
+                border-radius: .25rem;
+                
+                .mui-table-view-cell{
+                    padding: .55rem .5rem .65rem .9rem;
+                    border-radius:.25rem;
+                    &.mui-active{
+                        background-color: #fff;
+                    }
+                    &.mui-collapse.mui-active{
+                        margin:0;
+                    }
+                    // height: 46px;
+                    .mui-navigate-right{
+                        position: relative;
+                        display: block;
+                        overflow: hidden;
+                        margin: -.7rem -.75rem;
+                        margin-right: -.25rem;
+                        padding: inherit;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-size: .75rem;
+                        color: #ea5504; 
+                        &.mui-active{
+                            background-color: #fff;
+                        }
+                        &:after{
+                            color: #ea5504;
+                            font-size: .8rem;
+                            top: 46%;
+                            left:6.5rem;
+                            width: .7rem;
+                        }
+                        .accTime{
+                            position: absolute;
+                            right: .5rem;
+                        }
+                        .guzhang{
+                            width: 5.75rem;
+                            display: inline-block;
+                        }
+                    }
+                    .hideColor{
+                        color:#000;
+                        &:after{
+                        color:#000;
+                            
+                        }
+                    }
+                    .mui-collapse-content{
+                        text-indent: 1.4rem;
+                        p{
+                            line-height: 1.05rem;
+                            font-size: .7rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

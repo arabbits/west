@@ -1,0 +1,112 @@
+
+
+
+// 修改时间弹窗样式
+.mui-dtpicker {
+    .mui-dtpicker-header{
+        .mui-btn{
+            color: #ea5504;
+            border: none;
+            background-color: #f4f4f8;
+            font-size: .65rem;
+        }
+        .mui-btn::after{
+            content: "购车时间";
+            font-size: .65rem;
+            color: black;
+            display: inline-block;
+            width: 8.15rem;
+            text-align: end;
+        }
+        .mui-btn-blue{
+            background-color: transparent;
+        }
+        .mui-btn-blue::after{
+            content: '';
+            width: 0;
+            height: 0;
+        }
+    }
+    .mui-dtpicker-body{
+        .mui-picker{
+            .mui-pciker-list{
+                li{
+                    font-size: .55rem;
+                }
+            }
+        }
+    }
+}
+
+
+// 增加车牌号样式
+.che_line_wrap{
+    .import{
+        .oeder_detail{
+            width: 5.25rem;
+            margin-bottom: 0;
+            border: none;
+            color: #666;
+            height: 1rem;
+            padding: 0;
+            font-size: .65rem;
+        }
+    }
+    .che_line_left{
+        .carName{
+            padding-left: 2rem;
+            >.mui-icon {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+// 车牌弹出层配置
+.mui-popover {
+    position: fixed;
+    width: 101%;
+    height: 34%;
+    border-radius: 0;
+    left: 50%;
+    top: 77%;
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+    z-index: 999;
+    overflow: hidden;
+    box-shadow: 0 -.25rem .35rem 0 rgba(0,0,0,.1);
+    background-color: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.order_carry {
+    /* margin-left:20px; */
+    width: 12.5%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: .4rem;
+}
+
+.order_carry span {
+    display: inline-block;
+    font-size: .7rem;
+    width: 1.8rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow:0 .075rem 0px .025rem #ccc;
+}
+.order_zindex{
+    z-index: 1200;
+    height:13.3rem;
+    top:82%;
+}
+.mui-popover .mui-scroll-wrapper{
+    margin: 0;
+}
+#pop_bottom .mui-scroll{
+    height: 13.3rem;
+}

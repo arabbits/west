@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <!-- <link rel="stylesheet" href="../css/index/coupon.css"> -->
+    <link rel="stylesheet" href="../css/index/share.css">
+    <title>车吧族</title>
+    <style>
+        .navagio{
+            position: absolute;
+            z-index: 1000000;
+            right: 0.1rem;
+            top: 0px;
+        }
+        .navagio .div{
+            text-align: right;
+        }
+        .navagio img{
+            height: 2rem;
+            width: 2rem;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            animation: myfirst 1s infinite;
+            -webkit-animation: myfirst 1s infinite;
+            text-align: right;
+        }
+        @keyframes  myfirst
+        {
+        0% { top: 0px;left: 0px}
+        50% { top: 5px; left: 0px}
+        100% { top: 0px; left: 0px}
+        }
+        @-webkit-keyframes  myfirst /* Safari 和 Chrome */
+        {
+        0% { top: 0px;left: 0px}
+        50% {top: 5px; left: 0px}
+        100% {top: 0px; left: 0px}
+        }
+        .navagio>span{
+            font-size: .8rem;
+            color: #ffffff;
+        } 
+        .explain{
+            font-size: .75rem;
+            text-align: center;
+            padding: .5rem 0;
+            color: #e21d1d;
+        }
+        .che_header{
+            background-color: #ffbe00;
+            /* background:url('../img/index/bgc.png') no-repeat center;
+            background-size: cover; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navagio hiden">
+        <div class="div">
+            <img src="../img/img/chebazulog.png" alt="">
+        </div>
+        <span class="iconfont icon-fenxiang1"></span><span>分享领取优惠</span>
+    </div>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-icon mui-icon-back "></span>
+            </a>
+            <h4>优惠活动</h4>
+            <!-- <span class="mui-icon mui-icon-arrowdown"></span> -->
+            <a class="icon_right" href="#">
+                <!-- <span>领取</span> -->
+                <!-- <em></em> -->
+            </a>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volume hiden">
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>优惠被抢光啦~</div>
+                </div>
+            </div>
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+
+                    <div class="share_head">
+                        <div class="share_left"></div>
+                        <div class="share_one">
+                            <!-- 抢优惠吧 -->
+                        </div>
+                        <div class="share_right"></div>
+                    </div>
+                    <div class="share_main">
+                        <div class="share_twos">
+
+                        </div>
+                    </div>
+                    <div class="all_share_father">
+                        <div class="share_title">
+                            <div class="title_one">
+                                <!-- <div class="title_name">
+                                    活动详情
+                                </div>
+                                <div class="disMain che_display ">
+                                    <div class="comboFather">
+                                        <div class="disMain_main che_display">
+                                            <div class="disMain_main_one">
+                                                <span>套餐: 测试利润</span>
+                                                <span class="commb_number">22个</span>
+                                            </div>
+                                            <div class="disMain_main_two che_display" > 
+                                                <span>原价: <del class="che_text_spac">￥2000.00</del></span>
+                                                <span>现价: ￥100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="disMain_main che_display cardColor">
+                                            <span class="name_disMain show_dots">更换刹车油券更换刹车油券</span>
+                                            <span>数量: 12</span>
+                                            <span class="last_disMain">原价: <del class="che_text_spac">￥2000.00</del></span>
+                                        </div>
+                                        <div class="disMain_main che_display cardColor">
+                                            <span class="name_disMain show_dots">更换刹车油券更换刹车油券</span>
+                                            <span>数量: 10</span>
+                                            <span class="last_disMain">原价:  <del class="che_text_spac">￥2000.00</del></span>
+                                        </div>
+                                    </div>
+                                    <div class="comboFather">
+                                        <div class="disMain_main che_display goodColor">
+                                            <span>商品: 哈哈</span>
+                                            <span>数量: 1</span>
+                                            <span>原价: <del class="che_text_spac">￥100.00</del></span>
+                                            <span>现价: ￥10.00</span>
+                                        </div>
+                                        <div class="disMain_main che_display goodColor">
+                                            <span>商品: 空气滤清器</span>
+                                            <span>数量: 1</span>
+                                            <span>原价: <del class="che_text_spac">￥30.00</del></span>
+                                            <span>现价: ￥3.00</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/js/template.js"></script> 
+<script src="../js/index/share.js"></script>
+<script src="../js/common.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/html" id="tpl">
+    
+    <div class="share_title">
+        <div class="title_one">
+        {{each data as v i}}
+        <div class="title_name">
+            活动详情
+        </div>
+        <div class="disMain che_display ">
+        
+            <div class="comboFather topName">
+                <div class="disMain_main che_display goodColor" style="color:#000">
+                    <div style="width:100%" >活动名称: <span class="motherName" data-id={{v.activity_id}}>{{v.activity_name}}</span></div>
+                    <span>总价: ￥{{v.activity_info.all_price}}</span>
+                    <span class="che_color">返现金: ￥<em style="font-size:18px;">{{v.activity_money}}</em></span>
+                    <div style="color:#a0a0a0;">活动时间: {{v.start_time}} 至 {{v.end_time}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="title_name">
+            活动包含
+        </div>
+        <div class="disMain che_display ">
+        
+            {{if  v.activity_info.combo_info.length>0}}
+        
+            <div class="comboFather">
+                {{each v.activity_info.combo_info as j k }}
+                <div class="disMain_main che_display">
+                    <div class="disMain_main_one">
+                        <span>套餐: {{j.combo_name}}</span>
+                        <span class="commb_number">{{j.ag_num}}个</span>
+                    </div>
+                    <!-- <span>数量: 1</span> -->
+                    <div class="disMain_main_two che_display" > 
+                        <span>原价: <del class="che_text_spac">￥{{j.ago_price}}</del></span>
+                        <span>现价: ￥{{j.reality_price}}</span>
+                    </div>
+                </div>
+                    {{each j.card_info.cardData as s d }}
+                    <div class="disMain_main che_display cardColor">
+                        <span class="name_disMain show_dots">{{s.card_name}}</span>
+                        <span>数量: {{s.card_num}}</span>
+                        <span class="last_disMain">原价: <del class="che_text_spac">￥{{s.card_price}}</del></span>
+                    </div>
+                    {{/each}}
+                {{/each}}
+            </div>
+            {{/if}}
+            <div class="comboFather">
+                {{each v.activity_info.goods_info as j k }}
+                <div class="disMain_main che_display goodColor">
+                    <span>商品: {{j.goods_name}}</span>
+                    <span>数量: {{j.ag_num}}</span>
+                    <span>原价: <del class="che_text_spac">￥{{j.ago_price}}</del></span>
+                    <span>现价: ￥{{j.reality_price}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        
+        {{/each}}
+        </div>
+    </div>
+    <div class="share_footer">
+        {{if data[0].store_name!=''}}
+        <div class="share_footer_son che_display">
+            <div class="share_footer_one"></div>
+            <div class="share_footer_two">{{data[0].store_name}}</div>
+        </div>
+        {{/if}}
+        {{if data[0].store_address!=''}}
+        
+        <div class="share_footer_son che_display">
+            <div class="share_footer_one hello_two"></div>
+            <div class="share_footer_two">{{data[0].store_address}}</div>
+        </div>
+        {{/if}}
+        {{if data[0].store_phone!=''}}
+        
+        <div class="share_footer_son che_display">
+            <div class="share_footer_one hello_three"></div>
+            <div class="share_footer_two">{{data[0].store_phone}}</div>
+        </div>
+        {{/if}}
+        {{if data[0].store_tel!=''}}
+        <div class="share_footer_son che_display">
+            <div class="share_footer_one hello_four"></div>
+            <div class="share_footer_two">{{data[0].store_tel}}</div>
+        </div>
+        {{/if}}
+        {{if data[0].store_peoplename!=''}}
+        
+        <div class="share_footer_son che_display">
+            <div class="share_footer_one hello_five"></div>
+            <div class="share_footer_two">{{data[0].store_peoplename}}</div>
+        </div>
+        {{/if}}
+        <div class="explain">-- 本次活动最终解释权归本店所有 --</div>
+    </div>
+    
+</script>
+
+
+<!-- <div class="title_son">
+        <div>
+            1:活动时间: {{v.start_time}}至{{v.end_time}};
+        </div>
+        <div>
+            2:首次下单后: 为您推荐的好友会获得加值100元的现金抵用券,只要下单金额超过100元即可抵扣现金
+        </div>
+        <div>
+            3:首次下单后: 为您推荐的好友会获得加值100元的现金抵用券,只要下单金额超过100元即可抵扣现金
+        </div>
+    </div>
+    <div class="explain">本次活动最终解释权归本店所有</div> -->
+
+</html>

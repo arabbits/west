@@ -1,0 +1,80 @@
+.che_container {
+  padding-bottom: 0;
+}
+.che_main .newAddre {
+  padding: 0 .75rem;
+  background-color: #fff;
+}
+.che_main .newAddre input[type=text] {
+  border: none;
+  font-family: "Microsoft Yahei";
+}
+.che_main .newAddre div {
+  height: 2.5rem;
+  font-size: .75rem;
+  line-height: 2.5rem;
+}
+.che_main .newAddre div > span {
+  padding-right: 1.25rem;
+}
+.che_main .newAddre div input[type=text] {
+  width: 74%;
+  vertical-align: middle;
+  padding: 0;
+  height: 1.5rem;
+  font-size: .75rem;
+}
+.che_main .newAddre div .newName {
+  padding-right: 2.75rem;
+}
+.che_main .newAddre .che_textre {
+  height: 5rem;
+}
+.che_main .newAddre .che_textre > input[type=text] {
+  width: 100%;
+  height: 5rem;
+}
+.che_main .newAddre .che_textre textarea {
+  outline: none;
+  resize: none;
+  font-size: .75rem;
+  color: #393939;
+  padding: .25rem;
+  height: 100%;
+  border: none;
+  height: 5rem;
+  font-family: "Microsoft Yahei";
+}
+.che_main .editMoren {
+  height: 2.5rem;
+  margin-top: .5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .8rem;
+  font-size: .7rem;
+  align-items: center;
+  background-color: #fff;
+}
+.che_main .editMoren .mui-switch {
+  height: 1.2rem;
+  width: 2.2rem;
+  background-color: #c9c9c9;
+  border: .1rem solid #c9c9c9;
+}
+.che_main .editMoren .mui-switch .mui-switch-handle {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.che_main .editMoren .mui-active {
+  background-color: #4cd964;
+  border-color: #4cd964;
+}
+.che_main .editMoren .mui-active .mui-switch-handle {
+  transform: translate(0.95rem, 0px);
+  -webkit-transform: translate(0.95rem, 0px);
+}

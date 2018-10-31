@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+i {
+  font-style: normal;
+}
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.re {
+  position: relative;
+}
+
+.ab {
+  position: absolute;
+}
+
+
+
+
+
+.date{
+	width: 100%;
+	/* margin-left: 10%; */
+    /* border: 1px solid #000; */
+	border-radius: 0.6rem;	
+	overflow: hidden;
+}
+.dateHeader{
+    height: 194px;
+	background-color: #EA5504;
+	color: #fff;
+	padding: 40px 0 44px 0;
+}
+.year{
+	font-size: 24px;
+    text-indent: 1rem;
+    color: #fff;
+}
+.dateDesc{
+	font-size: 60px;
+	text-indent: 1rem;
+	margin-top: 0.3rem;
+	letter-spacing: 0.15rem;
+}
+.nowWeek{
+	margin-left: 0.6rem;
+}
+
+
+
+.chooseDate{
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+}
+.chooseDate .fl{
+	margin-left: 1rem;
+	color: #A3A3A3;
+}
+.chooseDate .fr{
+	margin-right: 1rem;
+	color: #A3A3A3;
+}
+.chooseDate .title{
+	font-size: 0.8rem;
+}
+
+
+.weekTitle{
+	width: 90%;
+	margin-left: 5%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.weekTitle li{
+	flex: 1;
+	text-align: center;
+	font-size: 0.7rem;
+	color: #A3A3A3;
+}
+
+
+.BtnP{
+	width: 100%;
+	height: 3rem;
+	padding-top: 0.7rem;
+	box-sizing:border-box;
+	padding-right: 1rem;
+}
+.BtnP button{
+	width: 3rem;
+	height: 1.6rem;
+	margin-left: 1rem;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	font-size: 0.8rem;
+}
+.dateInfo {
+	width: 100%;
+	box-sizing:border-box;
+	padding:1rem;
+}
+.dateInfo li{
+	width: 14.285%;
+	text-align: center;
+	font-size: 0.7rem;
+	border-radius: 50%;
+}
+.dateInfo .now{
+	color: #fff;
+	background-color: #EA5504;
+}
+.mui-popover {
+    border-radius: 22px !important;
+    position: fixed;
+    width: 82%;
+    height: 82%;
+    border-radius: 0;
+    left: 50%;
+    top: 53%;
+    margin: 0 auto;
+    z-index: 999;
+    background-color: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.mui-popover .mui-scroll-wrapper{
+    border-radius: none;
+    margin: 0;
+}

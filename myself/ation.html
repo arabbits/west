@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mycss/ation.css">
+    
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:history.go(-1)">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>系统通知</h4>
+            <a class="icon_right" href="JavaScript:;">
+                <span>清空</span>
+            </a>
+        </div>
+        <!-- <div class="ggg" style="display: block">
+                暂无系统信息
+        </div> -->
+        <div class="volist">
+                <div class="volist_nomode">
+                    <div class="volist_bgimg che_display">
+                        <div class="backImg"></div>
+                        <div>空空如也</div>
+                    </div>
+                    
+                </div>
+        </div>
+        <!-- <div class="che_main"> -->
+
+            <!-- <div class="ation_main">
+                <div class="ation_timer">
+                    <span>04-28</span>
+                    <span>08:23</span>
+                </div>
+                <div class="ation_conter">
+                    <ul>
+                        <li class="ation_one">您有一张优惠券即将过期~</li>
+                        <li class="ation_two">立即查看<span class="mui-icon mui-icon-arrowright"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ation_main">
+                    <div class="ation_timer">
+                        <span>04-28</span>
+                        <span>08:23</span>
+                    </div>
+                    <div class="ation_conter">
+                        <ul>
+                            <li class="ation_one">您有一张优惠券即将过期~</li>
+                            <li class="ation_two">立即查看<span class="mui-icon mui-icon-arrowright"></span></li>
+                        </ul>
+                    </div>
+                </div> -->
+        <!-- </div> -->
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/newaddress.js"></script>
+
+
+</html>
+<script>
+    $(function(){
+        $(".icon_right").on('tap',function(){
+            mui.confirm('真的要清空么?','通知',["不了","继续"],function(e){
+                if(e.index==1){
+                    console.log('呵呵')
+                    $('.che_main').remove();
+                    $('.ggg').show();
+                }
+            })
+        })
+    })
+</script>

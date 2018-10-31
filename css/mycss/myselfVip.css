@@ -1,0 +1,76 @@
+.che_main .myselfVip .vip_main {
+  height: 8.75rem;
+  border-radius: .5rem;
+  margin-top: .75rem;
+  margin-left: .75rem;
+  margin-right: .75rem;
+  padding: .65rem;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  font-size: .7rem;
+  letter-spacing: 1px;
+}
+.che_main .myselfVip .vip_main .vip_top {
+  justify-content: space-between;
+}
+.che_main .myselfVip .vip_main .vip_top .carName_s {
+  font-size: .9rem;
+  font-weight: 500;
+  width: 12.5rem;
+}
+.che_main .myselfVip .vip_main .vip_top .carName_add {
+  height: 1.1rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: .6rem;
+  border-radius: .75rem;
+}
+.che_main .myselfVip .vip_main .vip_nav {
+  text-align: center;
+}
+.che_main .myselfVip .vip_main .vip_nav .vip_money {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.che_main .myselfVip .vip_main .vip_fonts {
+  font-weight: lighter ;
+}
+.che_main .myselfVip .vip_frist {
+  background: url("../../img/newimg/vip1.png") center center no-repeat;
+  background-size: cover ;
+}
+.che_main .myselfVip .vip_secend {
+  background: url("../../img/newimg/vip2.png") center center no-repeat;
+  background-size: cover ;
+}
+.che_main .myselfVip .vip_three {
+  background: url("../../img/newimg/vip3.png") center center no-repeat;
+  background-size: cover ;
+}
+.che_main .myselfVip .vip_four {
+  background: url("../../img/newimg/vip4.png") center center no-repeat;
+  background-size: cover ;
+}
+.che_main .myselfVip .volist_nomode {
+  height: 34rem;
+  background-color: #fff;
+}
+.che_main .myselfVip .volist_nomode .volist_bgimg {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: .7rem;
+  color: #ea5504;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.che_main .myselfVip .volist_nomode .volist_bgimg .backImg {
+  height: 5rem;
+  width: 5rem;
+  background: url(../../img/img/meiyou.png) center no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,143 @@
+
+.che_container > .che_header > .icon_right > span{
+    font-size: 12px;
+}
+.che_container{
+    padding-bottom:0;
+    
+}
+.che_main {
+    padding: 0 10px;
+
+}
+.father{
+    position: relative;
+}
+.che_main .prive_contant{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100px;
+    background-color: #fff;
+    justify-content: start;
+    margin-top: 10px;
+} 
+.prive_head{
+    width: 30%;
+    text-align: center;
+    line-height: 100px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 14px;
+    border-right: 1px dashed red;
+    background-color: #ea5504;
+    color: #fff;
+}
+.prive_head ::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: -10px;
+    left: 96px;
+}
+.prive_head ::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    position: absolute;
+    bottom: -10px;
+    left: 96px;
+}
+.bigNum{
+    font-size: 20px;
+    
+}
+.prive_main{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 12px;
+    padding: 10px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 70%;
+    color: #a0a0a0;
+}
+.sonsMain{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-xuanze{
+    font-size: 16px;
+    color: #ccc;
+}
+.sonsOne{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;;
+}
+.sonsOne >span{
+    height: 18px;
+}
+.baoyang{
+    font-size: 14px;
+    /* padding-bottom: 5px; */
+    font-weight: 600;
+    color:#000;
+}
+.color{
+    color: #ea5504;
+}
+.mui-icon-arrowdown{
+    font-size: 14px;
+}
+
+
+/* tab 栏切换样式 */
+.mui-segmented-control.mui-scroll-wrapper{
+    margin: 10px 0;
+    height: 40px;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ea5504;
+    border-radius: 5px;
+    height: 100%;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+    background-color: #ea5504;
+    color: #fff;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+    width: 50%;
+    color: #ea5504;
+    /* line-height: 50px; */
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+    border: none;
+}
+
+/* 没有优惠劵时显示 */
+.noPrice{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    color: #ccc;
+}

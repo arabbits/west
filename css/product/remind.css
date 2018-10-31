@@ -1,0 +1,32 @@
+.che_main .remind_head {
+  height: 4.75rem;
+  margin-top: .5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: .6rem .85rem;
+  font-size: .75rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.che_main .remind_head .remindPho img {
+  width: 3.55rem;
+}
+.che_main .remind_head .remind_spa {
+  height: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5.6rem;
+}
+.che_main .remind_head .remind_spa .remind_click {
+  color: #939393;
+  font-size: .55rem;
+}
+.che_main .remind_head .righRem .mui-icon {
+  font-size: .9rem;
+  color: #939393;
+}

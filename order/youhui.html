@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <!-- <link rel="stylesheet" href="../css/youhui.css"> -->
+    <link rel="stylesheet" href="../css/mycss/youhui.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:;">
+                <span class="mui-action-back mui-icon mui-icon-back "></span>
+            </a>
+            <h4>抵用券</h4>
+            <a class="icon_right" href="#">
+                <span class="saygood">使用说明</span>
+                <!-- <em></em> -->
+            </a>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volume hiden">
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>优惠被抢光啦~</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="che_main">
+            <div id="" class="mui-slider">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="segmented">
+                    <div class="mui-scroll">
+                        <a class="mui-control-item mui-active" href="#item1mobile">
+                            可用劵(<span class="usable">1</span>)
+                        </a>
+                        <a class="mui-control-item" href="#item2mobile">
+                            不可用劵(<span class="noUsable">0</span>)
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-group">
+                    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                        <div class="father">
+                            <div class="prive_contant">
+                                <div class="prive_head">
+                                    <span>￥</span>
+                                    <span class="bigNum">200</span>
+                                </div>
+                                <div class="prive_main">
+                                    <span class="baoyang">保养抵用券</span>
+                                    <div class="sonsMain">
+                                        <div class="sonsOne">
+                                            <span>信用会特惠,保养立减</span>
+                                            <span>有效期至2018-05-31</span>
+                                        </div>
+                                        <div>
+                                            <span class="iconfont icon-xuanze "></span>
+                                        </div>
+                                    </div>
+                                    <span>使用规则
+                                        <span class="mui-icon mui-icon-arrowdown"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item2mobile" class="mui-slider-item mui-control-content">
+                        <div class="father">
+                            <div class="prive_contant">
+                                <div class="prive_head">
+                                    <span>￥</span>
+                                    <span class="bigNum">200</span>
+                                </div>
+                                <div class="prive_main">
+                                    <span class="baoyang">保养抵用券</span>
+                                    <div class="sonsMain">
+                                        <div class="sonsOne">
+                                            <span>信用会特惠,保养立减</span>
+                                            <span>有效期至2018-05-31</span>
+                                        </div>
+                                        <div>
+                                            <span class="iconfont icon-xuanze "></span>
+                                        </div>
+                                    </div>
+                                    <span>使用规则
+                                        <span class="mui-icon mui-icon-arrowdown"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                        <div class="father">
+                            <!-- <div class="prive_contant che_display">
+                                <div class="prive_head">
+                                    <span>￥</span>
+                                    <span class="bigNum">200</span>
+                                </div>
+                                <div class="prive_main che_display">
+                                    <span class="baoyang">保养抵用券</span>
+                                    <div class="sonsMain che_display">
+                                        <div class="sonsOne che_display">
+                                            <span>信用会特惠,保养立减</span>
+                                            <span>有效期至2018-05-31</span>
+                                        </div>
+                                        <div>
+                                            <span class="iconfont icon-xuanze "></span>
+                                        </div>
+                                    </div>
+                                    <span>使用规则
+                                        <span class="mui-icon mui-icon-arrowdown"></span>
+                                    </span>
+                                </div>
+                            </div> -->
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/youhui.js"></script>
+<!-- <script>
+
+    mui(".mui-scroll-wrapper").scroll({
+    indicators: false
+    });
+    mui('.mui-slider').slider().setStopped(true);
+    mui(".mui-slider").slider({
+    interval: 0
+    });
+    mui('.mui-slider').slider().setStopped(true);
+</script> -->
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+        {{if v.is_usable==1}}
+        <div class="prive_contant che_display" data-id={{v.rec_id}} data-price={{v.rec_money*1}}>
+            <div class="prive_head">
+                <span>￥</span>
+                <span class="bigNum">{{v.rec_money*1}}</span>
+            </div>
+            <div class="prive_main che_display">
+                <span class="baoyang">保养抵用券</span>
+                <div class="sonsMain che_display">
+                    <div class="sonsOne che_display">
+                        <span>信用会特惠,保养立减</span>
+                        <span>领取时间{{v.add_time.split(' ')[0]}}</span>
+                    </div>
+                    <div>
+                        <span class="iconfont icon-xuanze"></span>
+                    </div>
+                </div>
+                <span>使用规则
+                    <span class="mui-icon mui-icon-arrowdown"></span>
+                </span>
+            </div>
+        </div>
+        {{/if}} 
+    {{/each}}
+</script>
+<!-- <script type="text/html" id="tpltwo">
+    {{each data as v i}}
+    <div class="father">
+        <div class="prive_contant">
+            <div class="prive_head">
+                <span>￥</span>
+                <span class="bigNum">{{v.subtract_price}}</span>
+            </div>
+            <div class="prive_main">
+                <span class="baoyang">{{v.conpon_name}}</span>
+                <div class="sonsMain">
+                    <div class="sonsOne">
+                        <span>信用会特惠,保养立减</span>
+                        <span>有效期至2018-05-31</span>
+                    </div>
+                    <div>
+                        <span class="iconfont icon-xuanze "></span>
+                    </div>
+                </div>
+                <span>使用规则
+                    <span class="mui-icon mui-icon-arrowdown"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script> -->
+
+</html>

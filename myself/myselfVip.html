@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <link rel="stylesheet" href="../css/mycss/myselfVip.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:;">
+                <span class="mui-action-back mui-icon mui-icon-back "></span>
+            </a>
+            <h4>会员卡</h4>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="myselfVip">
+                        
+                        <!-- <div class="volist_nomode">
+                                <div class="volist_bgimg che_display">
+                                <div class="backImg"></div>
+                                <div>暂无卡券记录</div>
+                            </div>
+                            
+                        </div> -->
+                        <!-- <div class="vip_main che_display vip_frist">
+                            <div class="vip_top che_display">
+                                <span class="carName_s show_dots">上海别克4s店</span>    
+                                <span class="carName_add">充值卡</span>    
+                            </div>
+                            <div class="vip_secd">
+                                <span class="vip_hao">卡号:</span>    
+                                <span class="vip_num">1466466566565656</span>    
+                            </div>
+                            <div class="vip_nav">
+                                <span class="">余额</span>    
+                                <span class="vip_money">10550</span>
+                                <span>元</span>    
+                            </div>
+                            <div class="vip_said">
+                                <span class="">折扣:</span>    
+                                <span class="vip_money">8折</span>
+                            </div>
+                            <div class="vip_bottom">
+                                <span class="">购买时间:</span>    
+                                <span class="vip_time">2018-08-01</span>
+                            </div>
+                        </div>
+                        <div class="vip_main che_display vip_secend">
+                            <div class="vip_top che_display">
+                                <span class="carName_s show_dots">上海别克4s店</span>    
+                                <span class="carName_add">充值卡</span>    
+                            </div>
+                            <div class="vip_secd">
+                                <span class="vip_hao">卡号:</span>    
+                                <span class="vip_num">1466466566565656</span>    
+                            </div>
+                            <div class="vip_nav">
+                                <span class="">余额</span>    
+                                <span class="vip_money">10550</span>
+                                <span>元</span>    
+                            </div>
+                            <div class="vip_said">
+                                <span class="">折扣:</span>    
+                                <span class="vip_money">8折</span>
+                            </div>
+                            <div class="vip_bottom">
+                                <span class="">购买时间:</span>    
+                                <span class="vip_time">2018-08-01</span>
+                            </div>
+                        </div>
+                        <div class="vip_main che_display vip_three">
+                            <div class="vip_top che_display">
+                                <span class="carName_s show_dots">上海别克4s店</span>    
+                                <span class="carName_add">充值卡</span>    
+                            </div>
+                            <div class="vip_secd">
+                                <span class="vip_hao">卡号:</span>    
+                                <span class="vip_num">1466466566565656</span>    
+                            </div>
+                            <div class="vip_nav">
+                                <span class="">余额</span>    
+                                <span class="vip_money">10550</span>
+                                <span>元</span>    
+                            </div>
+                            <div class="vip_said">
+                                <span class="">折扣:</span>    
+                                <span class="vip_money">8折</span>
+                            </div>
+                            <div class="vip_bottom">
+                                <span class="">购买时间:</span>    
+                                <span class="vip_time">2018-08-01</span>
+                            </div>
+                        </div>
+                        <div class="vip_main che_display vip_four">
+                            <div class="vip_top che_display">
+                                <span class="carName_s show_dots">上海别克4s店</span>    
+                                <span class="carName_add">充值卡</span>    
+                            </div>
+                            <div class="vip_secd">
+                                <span class="vip_hao">卡号:</span>    
+                                <span class="vip_num">1466466566565656</span>    
+                            </div>
+                            <div class="vip_nav">
+                                <span class="">余额</span>    
+                                <span class="vip_money">10550</span>
+                                <span>元</span>    
+                            </div>
+                            <div class="vip_said">
+                                <span class="">折扣:</span>    
+                                <span class="vip_money">8折</span>
+                            </div>
+                            <div class="vip_bottom">
+                                <span class="">购买时间:</span>    
+                                <span class="vip_time">2018-08-01</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/myselfVip.js"></script>
+<script type="text/html" id="tpl">
+    {{if data.length == 0}}
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>暂无会员卡</div>
+                </div>
+            </div>
+    {{else}}
+        {{each data as v i}} 
+            {{if i%4==0 }}
+            <div class="vip_main che_display vip_frist">
+                <div class="vip_top che_display">
+                    <span class="carName_s show_dots">{{v.store_name}}</span>     
+                    {{if v.discount==1}}
+                    <span class="carName_add show_dots">无折扣</span>
+                    {{else}}
+                    <span class="carName_add show_dots">{{v.discount*10}}折</span>
+                    {{/if}} 
+                </div>
+                <div class="vip_secd">
+                    <span class="vip_hao">卡号:</span>    
+                    <span class="vip_num vip_fonts">{{v.club_number}}</span>    
+                </div>
+                <div class="vip_nav">
+                    <span class="">余额</span>    
+                    <span class="vip_money">{{v.balance}}</span>
+                    <span>元</span>    
+                </div>
+                <div class="vip_said">
+                    <span class="">类型:</span>    
+                    <span class="vip_money vip_fonts">{{v.club_name}}</span>    
+                </div>
+                <div class="vip_bottom">
+                    <span class="">购买时间:</span>    
+                    <span class="vip_time vip_fonts">{{v.add_time}}</span>
+                </div>
+            </div>
+            {{else if i%4==3}}
+            <div class="vip_main che_display vip_four">
+                    <div class="vip_top che_display">
+                        <span class="carName_s show_dots">{{v.store_name}}</span>     
+                        {{if v.discount==1}}
+                        <span class="carName_add show_dots">无折扣</span>
+                        {{else}}
+                        <span class="carName_add show_dots">{{v.discount*10}}折</span>
+                        {{/if}} 
+                    </div>
+                    <div class="vip_secd">
+                        <span class="vip_hao">卡号:</span>    
+                        <span class="vip_num vip_fonts">{{v.club_number}}</span>    
+                    </div>
+                    <div class="vip_nav">
+                        <span class="">余额</span>    
+                        <span class="vip_money">{{v.balance}}</span>
+                        <span>元</span>    
+                    </div>
+                    <div class="vip_said">
+                        <span class="">类型:</span>    
+                        <span class="vip_money vip_fonts">{{v.club_name}}</span>    
+                    </div>
+                    <div class="vip_bottom">
+                        <span class="">购买时间:</span>    
+                        <span class="vip_time vip_fonts">{{v.add_time}}</span>
+                    </div>
+            </div>
+            {{else if i%4==2}}
+            <div class="vip_main che_display vip_three">
+                    <div class="vip_top che_display">
+                        <span class="carName_s show_dots">{{v.store_name}}</span>     
+                        {{if v.discount==1}}
+                        <span class="carName_add show_dots">无折扣</span>
+                        {{else}}
+                        <span class="carName_add show_dots">{{v.discount*10}}折</span>
+                        {{/if}} 
+                    </div>
+                    <div class="vip_secd">
+                        <span class="vip_hao">卡号:</span>    
+                        <span class="vip_num vip_fonts">{{v.club_number}}</span>    
+                    </div>
+                    <div class="vip_nav">
+                        <span class="">余额</span>    
+                        <span class="vip_money">{{v.balance}}</span>
+                        <span>元</span>    
+                    </div>
+                    <div class="vip_said">
+                        <span class="">类型:</span>    
+                        <span class="vip_money vip_fonts">{{v.club_name}}</span>    
+                    </div>
+                    <div class="vip_bottom">
+                        <span class="">购买时间:</span>    
+                        <span class="vip_time vip_fonts">{{v.add_time}}</span>
+                    </div>
+            </div>
+            {{else if i%4==1}}
+            <div class="vip_main che_display vip_secend">
+                    <div class="vip_top che_display">
+                        <span class="carName_s show_dots">{{v.store_name}}</span>     
+                        {{if v.discount==1}}
+                        <span class="carName_add show_dots">无折扣</span>
+                        {{else}}
+                        <span class="carName_add show_dots">{{v.discount*10}}折</span>
+                        {{/if}} 
+                    </div>
+                    <div class="vip_secd">
+                        <span class="vip_hao">卡号:</span>    
+                        <span class="vip_num vip_fonts">{{v.club_number}}</span>    
+                    </div>
+                    <div class="vip_nav">
+                        <span class="">余额</span>    
+                        <span class="vip_money">{{v.balance}}</span>
+                        <span>元</span>    
+                    </div>
+                    <div class="vip_said">
+                        <span class="">类型:</span>    
+                        <span class="vip_money vip_fonts">{{v.club_name}}</span>    
+                    </div>
+                    <div class="vip_bottom">
+                        <span class="">购买时间:</span>    
+                        <span class="vip_time vip_fonts">{{v.add_time}}</span>
+                    </div>
+            </div>
+
+        {{/if}} 
+    {{/each}}
+        
+    {{/if}}
+</script>
+
+</html>

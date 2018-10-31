@@ -1,0 +1,77 @@
+
+
+.che_container{
+    .che_header{
+        .icon_left{
+            align-items: center;
+        }
+    }
+    .che_main{
+        padding: 0 .75rem;
+        .maintain_content{
+            margin-top: .75rem;
+            background-color: #fff;
+            padding:.5rem 0;
+            font-size: .7rem;
+            .mainTop{
+                justify-content: space-between;
+                padding: 0 .75rem;
+                .icon-shanchu{
+                    color: #939393;
+                    font-size: .9rem;
+                }
+            }
+            .maintain_center{
+                margin-top: .5rem;
+                padding: 0 1rem;
+                .mainFrist{
+                    border-bottom: 1px solid #e5e5e5;
+                    // position: relative;
+                    .mainOne{
+                        text-align: center;
+                    padding: .1rem 0 ;
+                    position: relative;
+                        >span{
+                            color: #ea5504;
+                            // border-bottom: 1px solid #ea5504;
+                        }
+                    }
+                    //下划线
+                    .mainOne::after{
+                        content: '';
+                        width: 1.5rem;
+                        height: 1px;
+                        background-color: #ea5504;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .mainTwo{
+                        // height: 36px;
+                        padding: .5rem 0;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        >span{
+                            width: 25%;
+                            text-align: center;
+                            line-height: 1.2rem;
+
+                        }
+                        .main_detail{
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .maintain_center:last-child{
+                >.mainFrist{
+                    border:none;
+
+                }
+            }
+        }
+    }
+}

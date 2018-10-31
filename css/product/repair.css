@@ -1,0 +1,64 @@
+.che_main {
+  padding: 0 .5rem;
+}
+.che_main .repair_main {
+  margin-top: .5rem;
+  height: 13.1rem ;
+  border-radius: .25rem;
+  background-color: #fff;
+  box-shadow: 0.025rem 0.025rem 0.75rem -0.05rem #ccc;
+  font-size: .65rem;
+}
+.che_main .repair_main .repair_head {
+  letter-spacing: .025rem;
+  height: 2.4rem;
+  padding: .65rem 0 0 .65rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.che_main .repair_main .repair_head .quick {
+  font-size: .55rem;
+  color: #c0c0c0;
+}
+.che_main .repair_main .repair_head .quick em {
+  color: #f09273;
+}
+.che_main .repair_main .repair_nav {
+  height: 10.7rem;
+}
+.che_main .repair_main .repair_nav .repair_echart {
+  height: 8.45rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
+.che_main .repair_main .repair_nav .repair_echart #lineChart {
+  height: 5rem;
+  width: 15rem;
+}
+.che_main .repair_main .repair_foot {
+  padding: 0 2.3rem .8rem 2.3rem;
+  height: 2.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: .55rem;
+}
+.che_main .repair_main .repair_foot > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.che_main .repair_main .repair_foot > div .numbers {
+  color: #a0a0a0;
+}

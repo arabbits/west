@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index/sos.css">
+    <title>车吧族</title>
+
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>紧急救援</h4>
+            <a class="icon_right">
+                <!-- <span class="mui-icon iconfont icon-icon1"></span> -->
+            </a>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volist_nomode hiden">
+            <div class="volist_bgimg che_display">
+                <div class="backImg"></div>
+                <div>暂未绑定商铺</div>
+            </div>
+        </div>
+        <div class="che_main">
+            <!-- <div class="sos_main" id="allmap">
+            </div> -->
+
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="che_sos">
+                        <div class="che_sosMain che_display">
+                            <!-- <div class="sos_name">
+                                <span>修理厂信息</span>
+                            </div>
+                            <div class="sos_product">
+                                <div class="che_display sos_frist">
+                                    <span class="sosOne">修理厂名:</span>
+                                    <span class="">纳克纳克纳克纳克纳克纳克纳克纳克纳克纳克纳克纳克纳克纳克</span>
+                                </div>
+                                <div class="che_display sos_secend">
+                                    <span class="sosOne">联系方式:</span>
+                                    <a href="tel:13764567708">13764567708 <span class="mui-icon mui-icon-phone"></span></a>
+                                    
+                                </div>
+                                <div class="che_display sos_frist">
+                                    <span class="sosOne">修理厂地址:</span>
+                                    <span class="">纳克纳克纳克纳克纳克纳克纳克</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IidNXL5Yvwg4EKunQk5pGQUxUqrsWKAY"></script> -->
+
+<script src="../js/index/sos.js"></script>
+<script type="text/html" id="tpl">
+    <div class="sos_name">
+        <span>修理厂信息</span>
+    </div>
+    {{each data as v i}}
+    <div class="sos_product">
+        <div class="che_display sos_frist">
+            <span class="sosOne">修理厂名:</span>
+            <span class="">{{v.store_name}}</span>
+        </div>
+        <div class="che_display sos_secend">
+            <span class="sosOne">联系方式:</span>
+            <a href="tel:{{v.store_phone}}">{{v.store_phone}} <span class="mui-icon mui-icon-phone"></span></a>
+        </div>
+        <div class="che_display sos_frist">
+            <span class="sosOne">修理厂地址:</span>
+            <span class="">{{v.store_address}}</span>
+        </div>
+    </div>
+    {{/each}}
+</script>
+</html>

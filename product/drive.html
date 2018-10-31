@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/product/drive.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>驾驶评析</h4>
+            <!-- <a class="icon_right" href="../product.html">
+                <span class="iconfont icon-fenxiang"></span>
+            </a> -->
+        </div>
+        <div class="loading hiden">
+                <img src="../img/img/jiazai.gif" alt="">
+            </div>
+        <div class="che_main">
+            <!-- 挖大坑 -->
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/product/drive.js"></script>
+<script type="text/html" id="tpl">
+
+    <div class="drive_head">
+        <div class="manner">
+            <div>打破记录</div>
+            <div class="driveBian">0</div>
+        </div>
+        <div>
+            <div>行车里程</div>
+            <div class="driveBian">{{data.mile}}</div>
+        </div>
+    </div>
+    <div class="drive_main">
+        <div class="mainHedr">
+            <div class="drive_latel">最近七天驾驶成绩
+                <span class="iconfont icon-youjiaduibi"></span>
+            </div>
+            <div class="timers">{{data.search_time}}</div>
+        </div>
+        <div class="eachres">
+            <div class="eachres_main">
+                <div class="each_top">
+                    <div class="each_left">
+                        <div class="eachleft_top" data-id="0">急转弯</div>
+                        <div class="eachleft_bottom">
+                            <span>{{data.turn}}</span> 次/百公里
+                        </div>
+                    </div>
+                    <div class="each_left">
+                        <div class="eachleft_top" data-id="1">原地怠速</div>
+                        <div class="eachleft_bottom">
+                            <span>{{data.idie}}</span> %
+                        </div>
+                    </div>
+                </div>
+                <div class="each_top">
+                    <div class="each_left">
+                        <div class="eachleft_top" data-id="2">急踩油门</div>
+                        <div class="eachleft_bottom">
+                            <span>{{data.acceleate}}</span> 次/百公里
+                        </div>
+                    </div>
+                    <div class="each_left">
+                        <div class="eachleft_top lastcar" data-id="3">急踩刹车</div>
+                        <div class="eachleft_bottom">
+                            <span>{{data.slowdown}}</span> 次/百公里
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="drive_centre">
+                <div class="centre_mains">
+                    <div class="lefts">一般</div>
+                    <div class="rights">一般</div>
+                    <div class=" bottoms">良好</div>
+                    <div class="tops ">良好</div>
+                    <div class="allSay">总评</div>
+                    <div class="allHero">良好</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+
+</html>

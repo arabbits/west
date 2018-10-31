@@ -1,0 +1,103 @@
+.che_main {
+  background-color: #fff;
+}
+.che_main .mui-scroll {
+  padding: 0 .5rem;
+  padding-bottom: 0;
+  border-top: 1px solid #f5f5f5;
+}
+.che_main .mui-scroll .che_orderdetail {
+  letter-spacing: 1px;
+}
+.che_main .mui-scroll .che_orderdetail .orderHead .detail_head {
+  height: 1.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .7rem;
+}
+.che_main .mui-scroll .che_orderdetail .orderHead .borders {
+  border-bottom: 1px solid #f5f5f5;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main {
+  padding: 0 .5rem;
+  font-size: .7rem;
+  color: #161616;
+  background-color: #f5f5f5;
+  margin-bottom: .5rem;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .detail_color {
+  color: #595959;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .detail_money {
+  color: #ea5504;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .order_this {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .35rem 0;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .order_this > div {
+  height: 1.1rem;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .order_this .detail_frist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.che_main .mui-scroll .che_orderdetail .detail_main .order_this .detail_frist .iconfont {
+  font-size: .75rem;
+  color: #595959;
+}
+.che_main .mui-scroll .che_orderdetail .detail_allmoney {
+  padding: 0 .5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+}
+.che_main .mui-scroll .che_orderdetail .detail_allmoney .allbox {
+  line-height: 1.2rem;
+}
+.che_main .mui-scroll .che_orderdetail .detail_allmoney .allbox .everyMoney {
+  color: #ea5504;
+}
+.che_main .mui-scroll .che_orderdetail .detail_allmoney .payment {
+  width: 2.4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background-color: #ea5504;
+  border-radius: .25rem;
+  color: #fff;
+  font-size: .65rem;
+  text-align: center;
+}
+.che_main .mui-scroll .che_orderdetail .detail_allmoney .paymentOk {
+  width: 2.4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background-color: #ccc;
+  border-radius: .25rem;
+  color: #fff;
+  font-size: .65rem;
+  text-align: center;
+}
+.che_main .mui-scroll .detaile_footer {
+  padding-top: 3rem;
+}
+.che_main .mui-scroll .detaile_footer .detail_over {
+  height: 2rem;
+  background-color: #ea5504;
+  font-size: .75rem;
+  color: #fff;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: .25rem;
+}

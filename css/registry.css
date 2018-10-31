@@ -1,0 +1,112 @@
+.che_container .che_header h4 {
+  font-size: .9rem;
+}
+.che_container .che_header .icon_right .golog {
+  display: inline-block;
+  width: 3.1rem;
+  height: 1.3rem;
+  font-size: .65rem;
+  background-color: #ea5504;
+  color: #fff;
+  border-radius: .25rem;
+  margin: .45rem 0;
+  text-align: center;
+  line-height: 1.3rem;
+}
+.che_container .che_main .registry_main {
+  margin-top: .75rem;
+  padding: 0 .75rem;
+  background-color: #fff;
+}
+.che_container .che_main .registry_main .phone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.che_container .che_main .registry_main .phone .inport {
+  width: 12.5rem;
+}
+.che_container .che_main .registry_main .phone .inport .iconfont {
+  font-size: .85rem;
+  color: #a0a0a0;
+}
+.che_container .che_main .registry_main .phone .inport input[type=text] {
+  height: 100%;
+  width: 10rem;
+  border: none;
+  font-size: .8rem;
+  padding: 0;
+  padding-left: .5rem;
+  line-height: 2.5rem;
+}
+.che_container .che_main .registry_main .phone .inport input[type=password] {
+  height: 100%;
+  width: 10rem;
+  border: none;
+  font-size: .8rem;
+  padding: 0;
+  padding-left: .5rem;
+  line-height: 2.5rem;
+}
+.che_container .che_main .registry_main .phone .verify {
+  font-size: .6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.che_container .che_main .registry_main .phone .verify > span {
+  height: 1.2rem;
+  width: 4.5rem;
+  background-color: #ea5504;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #fff;
+  border-radius: .25rem;
+}
+.che_container .che_main .registry_main .phone .verify .spacol {
+  background-color: #dcdcdc;
+  pointer-events: none;
+}
+.che_container .che_main .registry_main .phone .verifys {
+  width: 2.5rem;
+  text-align: center;
+}
+.che_container .che_main .registry_main .phone .verifys > .iconfont {
+  font-size: .8rem;
+  color: #a0a0a0;
+}
+.che_container .che_main .titles {
+  height: 2.5rem;
+  font-size: .6rem;
+  color: #a0a0a0;
+  padding-left: 1.75rem;
+  letter-spacing: 1px;
+}
+.che_container .che_main .titles em {
+  color: #ea5504;
+  line-height: 2.5rem;
+}
+.che_container .che_main .titles .icon-xuanze {
+  padding-right: .85rem;
+}
+.che_container .che_main .titles .style {
+  color: #ea5504;
+}
+.che_container .che_main .clickBtn {
+  padding: .75rem;
+}
+.che_container .che_main .clickBtn .registryBtn {
+  height: 2rem;
+  background-color: #ea5504;
+  border-radius: .25rem;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: .8rem;
+}

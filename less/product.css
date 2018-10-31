@@ -1,0 +1,88 @@
+.che_container .che_header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: .75rem;
+  line-height: 2.2rem;
+  color: #333333;
+}
+.che_container .che_main {
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.che_container .che_main .product_header {
+  height: 3.8rem;
+  font-size: .6rem;
+  background-color: #fff;
+  letter-spacing: .05rem;
+  color: #5b5b5b;
+}
+.che_container .che_main .product_header .headTime .proone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.che_container .che_main .product_header .headTime .proone div {
+  line-height: 1.25rem;
+}
+.che_container .che_main .product_header .headTime .proone div .times {
+  padding-right: .85rem;
+}
+.che_container .che_main .product_header .headTime .proone div > .mui-icon {
+  font-size: .95rem;
+  color: #bfbfbf;
+}
+.che_container .che_main .product_header .roadNum {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  padding-top: .7rem;
+}
+.che_container .che_main .product_header .roadNum > div {
+  padding-right: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-end;
+}
+.che_container .che_main .product_header .roadNum > div img {
+  width: .75rem;
+  height: .8rem;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: .15rem;
+}
+.che_container .che_main .product_header .roadNum > div span {
+  line-height: .8rem;
+}
+.che_container .che_main .product_main {
+  font-size: .55rem;
+  margin-top: .65rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.che_container .che_main .product_main .fatherPro {
+  margin-bottom: 1.2rem;
+  width: 20%;
+}
+.che_container .che_main .product_main .fatherPro .proList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #686868;
+  letter-spacing: .05rem;
+}
+.che_container .che_main .product_main .fatherPro .proList img {
+  height: 1.35rem;
+  width: 1.5rem;
+  margin-bottom: .5rem;
+}

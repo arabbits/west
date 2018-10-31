@@ -1,0 +1,41 @@
+.che_main {
+  padding: 0 .5rem;
+}
+.che_main .maintain {
+  padding: 0 .75rem;
+  height: 5rem;
+  background-color: #fff;
+  margin-top: .5rem;
+  letter-spacing: .025rem;
+}
+.che_main .maintain .maintain_main {
+  height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: .75rem;
+  color: #ea5504;
+  border-bottom: .025rem solid #e6e6e6;
+}
+.che_main .maintain .main_footer {
+  height: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .65rem 0;
+  font-size: .55rem;
+  color: #707070;
+}
+.che_main .maintain .main_footer .mainFoots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.che_main .maintain .main_footer .mainFoots .time_month {
+  padding-left: .65rem;
+}

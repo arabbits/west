@@ -1,0 +1,14 @@
+$(function(){
+    $.ajax({
+        url:api+'indexListMaintain',
+        type:'post',
+        headers:{"userauthkey":token},
+        data:{
+            user_id:user_id
+        },
+        success:function(data){
+            console.log(data)
+            $('.mui-scroll').html(template('tpl',data))
+        }
+    })
+})

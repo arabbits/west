@@ -1,0 +1,146 @@
+.che_main {
+  background-color: #fff;
+}
+.che_main .drive_head {
+  height: 2.7rem;
+  border-bottom: 1px solid #e7e7e7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  font-size: .75rem;
+}
+.che_main .drive_head > div {
+  width: 50%;
+  height: 100%;
+}
+.che_main .drive_head > div > div {
+  height: 50%;
+  line-height: 1.35rem;
+}
+.che_main .drive_head > div .driveBian {
+  color: #797979;
+  font-size: .5rem;
+}
+.che_main .drive_main .mainHedr {
+  height: 8.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  font-size: .8rem;
+}
+.che_main .drive_main .mainHedr .drive_latel {
+  height: 1.1rem;
+  line-height: .75rem;
+  text-align: start;
+  letter-spacing: .025rem;
+  border-bottom: .025rem solid #eeeeee;
+}
+.che_main .drive_main .mainHedr .drive_latel > .iconfont {
+  font-size: .8rem;
+}
+.che_main .drive_main .mainHedr .timers {
+  font-size: .65rem;
+  height: 1rem;
+  color: #797979;
+  padding-top: .3rem;
+  vertical-align: top;
+  line-height: .6rem;
+}
+.che_main .drive_main .eachres {
+  padding: 0 1.3rem;
+  height: 10.9rem;
+  position: relative;
+}
+.che_main .drive_main .eachres .eachres_main {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.che_main .drive_main .eachres .eachres_main .each_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+  color: #929292;
+}
+.che_main .drive_main .eachres .eachres_main .each_top .each_left .eachleft_top {
+  height: 1.375rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+.che_main .drive_main .eachres .eachres_main .each_top .each_left .eachleft_bottom {
+  height: 1rem;
+  line-height: .75rem;
+}
+.che_main .drive_main .eachres .eachres_main .each_top .each_left .eachleft_bottom > span {
+  text-align: center;
+  display: inline-block;
+  color: #5b5b5b;
+  font-weight: bold;
+  padding-bottom: .25rem;
+  border-bottom: .05rem solid #5b5b5b;
+}
+.che_main .drive_main .eachres .eachres_main .each_top .each_left .lastcar {
+  text-align: end;
+}
+.che_main .drive_main .eachres .drive_centre {
+  position: absolute;
+  top: .25rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains {
+  width: 10.25rem;
+  height: 10.25rem;
+  background: url(../../img/img/drive.png);
+  background-size: cover;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains img {
+  width: 10.25rem;
+  height: 10.25rem;
+  display: inline-block;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains > div {
+  position: absolute;
+  font-size: .75rem;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .lefts {
+  left: 1.75rem;
+  top: 2.5rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .bottoms {
+  bottom: 2.35rem;
+  left: 1.75rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .rights {
+  right: 1.75rem;
+  top: 2.5rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .tops {
+  right: 1.75rem;
+  bottom: 2.35rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .allSay {
+  font-size: .55rem;
+  color: #bbb;
+  left: 4.575rem;
+  top: 4rem;
+}
+.che_main .drive_main .eachres .drive_centre .centre_mains .allHero {
+  font-size: .8rem;
+  color: #fda831;
+  top: 5rem;
+  left: 4.325rem;
+}

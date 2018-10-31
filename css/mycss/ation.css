@@ -1,0 +1,85 @@
+.che_container {
+  padding-bottom: 0;
+}
+.che_container .che_header .icon_right span {
+  font-size: .6rem;
+}
+.che_container .ggg {
+  display: none;
+  height: 5rem;
+  line-height: 5rem;
+  width: 100%;
+  font-size: .75rem;
+  color: #ea5540;
+  text-align: center;
+}
+.che_container .che_main > .ation_main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 .5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.che_container .che_main > .ation_main .ation_timer {
+  margin: 1rem 0 .75rem 0;
+  width: 6rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: .55rem;
+  letter-spacing: .05rem;
+  background-color: #cdcdcd;
+  border-radius: .7rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+}
+.che_container .che_main > .ation_main .ation_conter {
+  width: 100%;
+  background-color: #fff;
+}
+.che_container .che_main > .ation_main .ation_conter ul {
+  padding-left: .5rem;
+}
+.che_container .che_main > .ation_main .ation_conter ul .ation_one {
+  height: 2.1rem;
+  line-height: 2.1rem;
+  font-size: .6rem;
+  border-bottom: 1px solid #e7e7e7;
+  letter-spacing: 1px;
+}
+.che_container .che_main > .ation_main .ation_conter ul .ation_two {
+  height: 1.9rem;
+  line-height: 1.9rem;
+  font-size: .55rem;
+  text-align: end;
+  color: #ea5540;
+}
+.che_container .che_main > .guard_hdd {
+  margin: .5rem .5rem 0 .5rem ;
+  height: 4rem;
+  font-size: .65rem;
+  padding-left: .5rem;
+  color: #575757;
+  letter-spacing: .075rem;
+}
+.che_container .che_main > .guard_hdd .guard_tim {
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.che_container .che_main > .guard_hdd .guard_behav {
+  padding-top: .25rem;
+  line-height: 180%;
+}
+.che_container .che_main > .guard_hdd .guard_behav > span .trim {
+  display: inline-block;
+  width: .25rem;
+}
+.che_container .che_main > .guard_hdd .guard_behav > span .shigu {
+  color: #ea5504;
+}

@@ -1,0 +1,104 @@
+.che_main {
+  padding: 0 1rem;
+  background-color: #fff;
+}
+.che_main .report_head {
+  height: 7.8rem;
+  border-bottom: .025rem solid #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .6rem;
+  padding: 0 .25rem;
+}
+.che_main .report_head .head_fuel {
+  height: 3.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.che_main .report_head .head_fuel > .report_one img {
+  width: 1.55rem;
+}
+.che_main .report_head .head_fuel em {
+  color: #df4f4f;
+}
+.che_main .report_head .head_center > .report_center {
+  position: relative;
+}
+.che_main .report_head .head_center > .report_center > span {
+  position: absolute;
+  font-size: .4rem;
+  top: 1.1rem;
+  left: .45rem;
+}
+.che_main .report_head .head_center > .report_center > span em {
+  color: #ffe702;
+}
+.che_main .report_head .head_center > .report_one img {
+  height: 4.7rem;
+  width: 5rem;
+}
+.che_main .report_main .img_main {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.che_main .report_main .img_main > img {
+  height: 5.05rem;
+  width: 13.3rem;
+  display: inline-block;
+}
+.che_main .report_main .father_main em {
+  color: #ed4f51;
+}
+.che_main .report_main .father_main .son_main {
+  font-size: .65rem;
+  padding-left: 2.3rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.che_main .report_main .father_main .son_main .duck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.che_main .report_main .father_main .son_main .duck img {
+  width: .75rem;
+  margin-right: 1.7rem;
+}
+.che_main .report_main .father_main .son_main .duck .foreImg {
+  margin-left: .1rem;
+}
+.che_main .report_main .father_main .son_main .rank {
+  height: 1.7rem;
+  padding: .4rem 0 .4rem 2.35rem;
+}
+.che_main .report_main .father_main .newNam {
+  padding: .5rem 0;
+  padding-left: 2.3rem;
+}
+.che_main .report_main .father_main .newNam .newrank {
+  padding-bottom: 0;
+  height: 1.2rem;
+}
+.che_main .report_main .father_main .newNam .shengmon {
+  color: #7c7c7c;
+  font-size: .55rem;
+  padding-top: 0;
+  height: .8rem;
+  padding-bottom: 0;
+}
+.che_main .report_main .father_main .newNam .newdata > span {
+  padding-right: 1rem;
+}
+.che_main .report_main .father_main .newNam .newdata > span > em {
+  padding-left: .4rem;
+}
+.che_main .report_main .father_main .footNam {
+  border: none;
+}

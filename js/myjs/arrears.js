@@ -1,0 +1,26 @@
+$(function(){
+    $.ajax({
+        url:api+"indexArrearsList",
+        headers:{'userauthkey':token},
+        beforeSend:function(){
+            $('.loading').show();
+        },
+        type:'post',
+        success:function(data){
+            console.log(data)
+            $('.loading').hide();
+            // console.log(data.data[0])
+            if(data.result){
+                $('.che_main').show();
+                $('.volist').html(template('tpl',data))
+            }else{
+                mui.toast(data.msg)
+                $('.volist_nomode').show();
+            }
+            if(data.data.length<=0){
+                $('.volist_nomode').show();
+                mui.toast(data.msg)
+            }
+        }
+    })
+})

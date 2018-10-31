@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <link rel="stylesheet" href="../css/mycss/volumeList.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:;">
+                <span class="mui-action-back mui-icon mui-icon-back "></span>
+            </a>
+            <h4>扣卡记录</h4>
+        </div>
+        <div class="loading" style="display: none;">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="volist">
+                        <!-- <div class="volist_start che_display">
+                        <div class="volist_one che_display">
+                            <div class="volum_name">抛光镀晶卡</div>
+                            <div><span class="volum_time">添加时间 :</span><span>2018-06-29 13:39:51</span></div>
+                        </div>
+                        <div class="volist_two che_display">
+                            <div class="volum_name">沪A123456</div>
+                            <div><span class="volum_time">订单编号 :</span><span>18062913510144528656</span></div>
+                        </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/volumeList.js"></script>
+<script type="text/html" id="tpl">
+    {{if data.length==0}}
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>暂无扣卡记录</div>
+                </div>
+                
+            </div>
+    {{else}}
+            {{each data as v i}}
+                
+                <div class="volist_start che_display">
+                    <div class="volist_one che_display">
+                        <div class="volum_name">{{v.card_name}}</div>
+                        <div>
+                            <span class="volum_time">扣卡时间 :</span>
+                            <span>{{v.add_time}}</span>
+                        </div>
+                    </div>
+                    <div class="volist_two che_display">
+                        <div class="volum_name">{{v.cart_licens}}</div>
+                        <div>
+                            <span class="volum_time">订单编号 :</span>
+                            <span>{{v.order_sn}}</span>
+                        </div>
+                    </div>
+                </div>
+                
+            {{/each}}
+    {{/if}}
+    
+</script>
+
+</html>

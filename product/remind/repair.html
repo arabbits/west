@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/product/base.css">
+    <link rel="stylesheet" href="../../css/product/repair.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>养护提醒</h4>
+            <!-- <a class="icon_right" href="../../product.html">
+                <span class="iconfont icon-shezhi1"></span>
+            </a> -->
+        </div>
+        <div class="loading hiden">
+                <img src="../../img/img/jiazai.gif" alt="">
+            </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <!-- <div class="repair_main">
+                        <div class="repair_head">
+                            <div>发动机养护保养公里数</div>
+                            <div class="quick">距离到期还有
+                                <em>4830.56</em>km</div>
+                        </div>
+                        <div class="repair_nav">
+                            <div class="repair_echart">
+                                <div class="startnum" id="lineChart"></div>
+                            </div>
+                            <div class="repair_foot">
+                                <div class="setname">
+                                    <div>初始值</div>
+                                    <div class="numbers">34256km</div>
+                                </div>
+                                <div class="setname">
+                                    <div>到期值</div>
+                                    <div class="numbers">34256km</div>
+                                </div>
+                                <div class="setname">
+                                    <div>当前公里数</div>
+                                    <div class="numbers">34256km</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/js/echarts.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/product/repair.js"></script>
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+
+    <div class="repair_main">
+        <div class="repair_head">
+            <div>{{v.parts_name}}养护保养公里数</div>
+            <div class="quick">距离到期还有
+                <em class="daoqi">{{v.expireMile}}</em>km</div>
+        </div>
+        <div class="repair_nav">
+            <div class="repair_echart">
+                <div class="startnum" id="lineChart"></div>
+            </div>
+            <div class="repair_foot">
+                <div class="setname">
+                    <div>初始值</div>
+                    <div class="numbers">
+                        <span class="all">{{v.mileage}}</span>km</div>
+                </div>
+                <div class="setname">
+                    <div>到期值</div>
+                    <div class="numbers">
+                        <span>{{v.fill}}</span>km</div>
+                </div>
+                <div class="setname">
+                    <div>当前公里数</div>
+                    <div class="numbers">
+                        <span>{{v.nowMile}}</span>km</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

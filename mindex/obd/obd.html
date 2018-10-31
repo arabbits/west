@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <title>车吧族</title>
+    <style>
+        .che_main{
+            padding: 0 .5rem;
+        }
+        .obd_img .imgs_one{
+            height: 5rem;
+            margin-top: .5rem;
+            background:url('../../img/index/obdtwo.png') center center no-repeat;
+            background-size: cover;
+        }
+        .obd_img .tewins{
+            background:url('../../img/index/obds.png') center center no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="/index.html">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>托管服务</h4>
+        </div>
+        <div class="che_main">
+            <div class="obd_img">
+                <div class="imgs_one oners">
+                    <!-- <img src="../../img/index/obdtwo.png" alt=""> -->
+                </div>
+                <div class="imgs_one tewins">
+                    <!-- <img src="../../img/index/obds.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script>
+    $(function(){
+        $('.oners').on('tap',function(){
+            console.log('kk');
+            var values = 1;
+            sessionStorage.setItem('values',values)
+            location.href="serve.html"
+        });
+        $('.tewins').on('tap',function(){
+            console.log('kk');
+            var values = 2;
+            sessionStorage.setItem('values',values)
+            location.href="limit.html"
+            
+        })
+    })
+</script>
+</html>

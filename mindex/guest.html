@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <!-- <link rel="stylesheet" href="../css/index/coupon.css"> -->
+    <link rel="stylesheet" href="../css/index/guest.css">
+    <title>车吧族</title>
+    <style>
+        .navagio{
+            position: absolute;
+            z-index: 1000000;
+            right: 0.1rem;
+            top: 0px;
+        }
+        .navagio .div{
+            text-align: right;
+        }
+        .navagio img{
+            height: 2rem;
+            width: 2rem;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            animation: myfirst 1s infinite;
+            -webkit-animation: myfirst 1s infinite;
+            text-align: right;
+        }
+        @keyframes  myfirst
+        {
+        0% { top: 0px;left: 0px}
+        50% { top: 5px; left: 0px}
+        100% { top: 0px; left: 0px}
+        }
+        @-webkit-keyframes  myfirst /* Safari 和 Chrome */
+        {
+        0% { top: 0px;left: 0px}
+        50% {top: 5px; left: 0px}
+        100% {top: 0px; left: 0px}
+        }
+        .navagio>span{
+            font-size: .8rem;
+            color: #ffffff;
+        } 
+        .explain{
+            font-size: .7rem;
+            text-align: center;
+            padding: .5rem 0;
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navagio hiden">
+        <div class="div">
+            <img src="../img/img/chebazulog.png" alt="">
+        </div>
+        <span class="iconfont icon-fenxiang1"></span><span>分享领取优惠</span>
+    </div>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-icon mui-icon-back "></span>
+            </a>
+            <h4>优惠活动</h4>
+            <!-- <span class="mui-icon mui-icon-arrowdown"></span> -->
+            <a class="icon_right" href="#">
+                <!-- <span>领取</span> -->
+                <!-- <em></em> -->
+            </a>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volume hiden">
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>优惠被抢光啦~</div>
+                </div>
+            </div>
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <!-- <div class="discount_main">
+                        <div class="disHead">
+                            <div class="moddil">
+                                <div>王卡</div>
+                                <div class="aging">有效期 2018-09-21至2018-09-23</div>
+                            </div>
+                            <div class="zheko">￥<em>1000</em></div>
+                        </div>
+                        <div class="disNav">
+                            <div class="oldMoney">
+                                满1100减1000
+                            </div>
+                            <div class="looks">
+                                领取
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="discount_main">
+                        <div class="disHead">
+                            <div class="moddil">
+                                <div>优惠券</div>
+                                <div class="aging">有效期至 2018-09-23</div>
+                            </div>
+                            <div class="zheko"><span>9</span><em>.9折</em></div>
+                        </div>
+                        <div class="disNav">
+                            <div class="oldMoney">
+                                最高折扣50元,舒适 & 商务型可用,机场&预约订单除外
+                            </div>
+                            <div class="looks">
+                                查看规则详情 <span class="mui-icon mui-icon-arrowright"></span>
+                            </div>
+                        </div>  
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/common.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- <script src="../js/index/coupon.js"></script> -->
+<script src="../js/index/guest.js?v=1.2.4"></script>
+<!-- <script src="../js/index/实验.js"></script> -->
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+    <div class="discount_main">
+        <div class="disHead che_display">
+            <div class="moddil">
+                <div class="activity_name">{{v.activity_name}}</div>
+                <div class="aging">有效期{{v.start_time}}至{{v.end_time}}</div>
+            </div>
+            <div class="zheko">返现￥<em>{{v.activity_money}}</em></div>
+            <span class="mui-icon mui-icon-arrowright"></span>
+        </div>
+        <div class="mainFather">
+            <div class="disMain che_display ">
+                {{if  v.activity_info.combo_info.length>0}}
+                <div class="comboFather">
+                    {{each v.activity_info.combo_info as j k }}
+                        <div class="disMain_main che_display commobColor">
+                            <span>套餐: {{j.combo_name}}</span>
+                            <span>数量: {{j.ag_num}}</span>
+                            <span>原价: <del class="che_text_spac">￥{{j.ago_price}}</del></span>
+                            <span>现价: ￥{{j.reality_price}}</span>
+                        </div>
+                        {{each j.card_info.cardData as s d }}
+                            <div class="disMain_main che_display cardColor">
+                                <span>商品: {{s.card_name}}</span>
+                                <span>数量: {{s.card_num}}</span>
+                            </div>
+                        {{/each}}
+                    {{/each}}
+                </div>
+                {{/if}}
+                {{each v.activity_info.goods_info as j k }}
+                    <div class="disMain_main che_display goodColor">
+                        <span>商品: {{j.goods_name}}</span>
+                        <span>数量: {{j.ag_num}}</span>
+                        <span>原价: <del class="che_text_spac">￥{{j.ago_price}}</del></span>
+                        <span>现价: ￥{{j.reality_price}}</span>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="disNav">
+            <div class="oldMoney">
+                <!-- 满{{v.reach_price}}减{{v.subtract_price}} -->
+                总价 ￥{{v.activity_info.all_price}}
+            </div>
+            {{if v.is_share==1}}
+            <div class="looks fenxiang" data-id="{{v.activity_id}}">
+                领券分享
+            </div>
+            {{else}}
+            <div class="looks lucks" data-id="{{v.activity_id}}">
+                领取
+            </div>
+            {{/if}}
+        </div>
+    </div>
+
+    {{/each}}
+    <div class="explain">本次活动最终解释权归本店所有</div>
+
+</script>
+
+
+</html>

@@ -1,0 +1,365 @@
+.che_container {
+    font-size: .65rem;
+  }
+  input[type=text]{
+      width: 5.6rem;
+      margin-bottom:0;
+      border: none;
+      height: 1rem;
+      padding: 0;
+      font-size: .65rem;
+  }
+  .che_content_title{
+      color: #000;
+  }
+  .mui-icon{
+    font-size: .75rem;
+}
+  .iconfont{
+      font-size: .75rem;
+  }
+  .upkeep-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 5.5rem; */
+    padding: .75rem 0;
+    padding-left: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+  }
+  .order_one{
+      flex-direction: column;
+      justify-content: space-between;
+      /* height: 2.25rem; */
+      padding-top: .5rem;
+  }
+  .order_one .orderList {
+      padding-bottom: .3rem;
+  }
+  .order_one .orderList .cardSite{
+    padding-left:5px;
+  }  
+/* .orderList{
+    padding: .5rem 0;
+} */
+/* 内容开始 */
+.order_main{
+    background-color: #fff;
+    position: relative;    
+    margin-bottom: .5rem;
+}
+.orderTwo{
+    border-bottom: 0.5px solid #dcdcdc;
+    padding: .575rem 1.1rem ;
+    position: relative;
+    height: 2.5rem;
+    line-height: 1.35rem;
+}
+.borderNone{
+    border: none;
+}
+.carName{
+    padding-left: 1.75rem;
+}
+
+
+.oeder_detail{
+    position: absolute;
+    top: .75rem;
+    bottom: 0;
+    right: 5.85rem;
+    color: #666;
+    font-size: .55rem;
+    text-align: left;   
+}
+.form-right{
+    position: absolute;
+    right: 1.35rem;
+    top: .625rem;
+}
+.form-right span img{
+    width: 1.25rem;
+    float: left;
+}
+.orderMan img{
+    margin-right: .5rem;
+}
+/* 文字 不要发票 */
+.notKar{
+    color: #ccc;
+    padding-left: 8.5rem;
+}
+/* 取送 发票 */
+
+.order_repress{
+    position: relative;    
+    background-color: #fff;
+    margin-bottom: .5rem;
+}
+.repress_peo{
+    float: right;
+}
+.icon-switch {
+    height: 1rem;
+    width: 2.25rem;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ccc;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.icon-switch__circle{
+    display: inline-block;
+    width: .85rem;
+    height: .85rem;
+    background-color: #fff;
+    z-index: 3;
+    top: .075rem;
+    left: .05rem;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.icon-switch__green{
+    display: inline-block;
+    width: 2.25rem;
+    height: 1rem;
+    background-color: green;
+    z-index: 2;
+    vertical-align: top;
+    position: absolute;    
+    cursor: pointer;
+    left: -2.25rem;
+    border-radius: .5rem;
+    
+}
+.icon-switch__green, .icon-switch__circle{
+    -webkit-transition: left .2s ease 0s;
+    transition: left .2s ease 0s;
+}
+.transForm .icon-switch__circle{
+    left: 1.35rem;  
+}
+.transForm .icon-switch__green{
+    left: 0;  
+}
+/* 优惠券 */
+.order_juan{
+    background-color: #fff;
+}
+.juan_head{
+    color: #ccc;
+    font-size: .7rem;
+    position: absolute;
+    right: 1.1rem;
+}
+
+/* 明细弹出层样式 */
+  .upkeep-form-item {
+    padding: .5rem 0;
+    position: relative;
+  }
+  .upkeep-right {
+    right: .375rem;
+  }
+  .old-del-price{
+      color: #ccc;
+      font-size: .55rem;
+  }
+  .new-price {
+    display: inline-block;
+    text-align: right;
+    min-width:2.25rem;
+    vertical-align: center;
+  }
+  .new-icon-price{
+      font-size: .55rem;
+  } 
+  
+  
+
+.upkeep-oil-ver{
+      color: #ccc;
+      font-size: .55rem;
+      margin: 0 .375rem; 
+  }
+  
+  /* 底部 */
+  .upkeep-page-bottom{
+      position: relative;
+      box-sizing: border-box;
+  }
+
+  
+  .upkeep-bottom-btn{
+      float: right;
+      width: 33%;
+      height: 2.5rem;
+      background-color: #ea5504;
+      border: none; 
+      
+  }
+  .upkeep-text-shadow{
+      color: #fff;
+      font-size: .85rem;
+  }
+  
+  .upkeep-del{
+      float: right;
+      right: 33%;
+      width: 28%;
+      height: 2.5rem;
+      /* text-align: center;  */
+      padding: .5rem 1.25rem .5rem 1.5rem;
+      text-align: center;
+      line-height: 1.5rem;
+      color: #000;
+  }
+
+ /* 明细 */
+  .cmt-real-pay{
+     padding-left: 1rem;
+     padding-top: .8rem;
+  }
+  .cmt-money{
+      font-size: .65rem;
+      color: #ea5504;
+      
+  }
+  .cmt-money-hint{
+      font-size: .55rem;
+      color: #ccc;
+  }
+  
+  .order_read{
+      padding: .575rem 1.1rem;
+      background-color: #fff;
+      flex-direction: column;
+  }
+  .order_read>div{
+      line-height: 1.1rem;
+  }
+  .order_read .order_shit .order_readSon{
+    color: #a0a0a0;
+  }
+  .order_read .order_shit .order_secend{
+    text-indent: 1.2rem;
+  }
+
+
+
+  /* 弹出层配置  */
+  /* .mui-popover{
+      position: fixed;
+      width: 80%;
+      height: 70%;
+      border-radius: 0;
+      left: 50%;
+      top: 50%;
+      margin: 0 auto;
+      z-index: 9999;
+      background-color: #fff;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  } */
+  .mui-popover-arrow{
+      display: none;
+  }
+  
+  
+  .mui-popover {
+      position: fixed;
+      width: 100%;
+      height: 34%;
+      border-radius: 0;
+      left: 50%;
+      top: 77%;
+      margin: 0 auto;
+      /* padding-bottom: 100px; */
+      z-index: 999;
+      overflow: hidden;
+      background-color: #fff;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .mui-popover-arrow {
+      display: none;
+  }
+  
+  /* 弹出菜单 */
+  
+  
+  .upkeep-oil-ver-new{
+      font-size: .65rem;
+      color: #ccc;
+  }
+  
+  .upkeep-right-new{
+      right: 2rem;
+  }
+  .old-del-price-new{
+      font-size: .65rem;
+      color: #ccc;
+  }
+  
+  .che_form_wrap_new li{
+      /* padding: .4rem 0; */
+  }
+  
+  .che_iconClose{
+      background-color: #fff;
+      color: #a0a0a0;
+      position: absolute;
+      right: -1.25rem;
+      bottom: 0;
+      font-size: 1rem;
+        display: none;
+  } 
+
+
+
+  /* 地址演出层 */
+
+  .order_carry {
+    /* margin-left:20px; */
+    width: 12.5%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: .4rem;
+}
+
+.order_carry span {
+    display: inline-block;
+    width: 1.8rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow:0rem .125rem .3rem .025rem #ccc;
+}
+.order_zindex{
+    z-index: 1200;
+    height:13.3rem;
+    top:82%;
+}
+.mui-popover .mui-scroll-wrapper{
+    margin: 0;
+}
+#pop_bottom .mui-scroll{
+    height: 13.3rem;
+}
+
+/* 当有优惠券是的样式 */
+.haveColor{
+    color: #ea5504;
+}

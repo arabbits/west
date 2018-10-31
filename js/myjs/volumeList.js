@@ -1,0 +1,25 @@
+$(function(){
+    $.ajax({
+        url:api+"indexGetUserCouponRecord",
+        headers:{'userauthkey':token},
+        beforeSend:function(){
+            $('.loading').show();
+        },
+        type:'post',
+        data:{user_id:user_id},
+        success:function(data){
+            console.log(data)
+            $('.loading').hide();
+            $('.che_main').show();
+            console.log(data.data[0])
+            if(data.result){
+                $('.volist').html(template('tpl',data))
+            }else{
+            }
+            if(!data.data[0]){
+
+                mui.toast(data.msg)
+            }
+        }
+    })
+})

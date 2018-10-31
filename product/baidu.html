@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/product/baidu.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>行驶数据</h4>
+            <!-- <a class="icon_right" href="../product.html">
+                <span class="iconfont icon-ziyuan"></span>
+            </a> -->
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+
+        <div class="che_main hiden">
+            <div class="bai_header">
+                
+
+            </div>
+            <div class="bai_earth">
+                <!-- 百度地图api配置 -->
+                <div id="map_canvas"></div>
+                <button id="run">开始</button> 
+	            <button id="stop">停止</button> 
+            </div>
+            <div class="bai_footer">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/js/jquery.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<!-- <script src="../js/common.js"></script> -->
+<script type="text/html" id="tpl">
+    
+    <div class="tra_trans">
+                    
+            <div class="songs">
+                    <div><em style="color: #ea5504">100</em></div>
+                    <div class="imtra starts">
+                        行程评分
+                    </div>
+                </div>
+        <div class="songs">
+            <div><em style="color: #fc0203">{{data.ACCELERATE_NUM}}次</em></div>
+            <div class="imtra">
+                <img src="../img/product/2.png" alt="">
+                <span>急加速
+                </span>
+            </div>
+        </div>
+        <div class="songs">
+            <div><em style="color:#6cd40f">{{data.SLOWDOWN_NUM}}次</em></div>
+            <div class="imtra">
+                <img src="../img/product/3.png" alt="">
+                <span>急减速
+                </span>
+            </div>
+        </div>
+        <div class="songs">
+            <div><em style="color: #fc0203">{{data.TURN_NUM}}次</em></div>
+            <div class="imtra">
+                <img src="../img/product/4.png" alt="">
+                <span>急转弯
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</script>
+<script type="text/html" id="tpltwo">
+    <div class="banner_bai ">
+        <div>里程</div>
+        <div class="col_bai">{{data.mile}}Km</div>
+    </div>
+    <div class="banner_bai bor_bai">
+        <div>开始时间</div>
+        <div class="col_bai start_time"></div>
+    </div>
+    <div class="banner_bai">
+        <div>结束时间</div>
+        <div class="col_bai end_time">1次</div>
+    </div>
+    <div class="banner_bai bor_bai">
+        <div>油耗</div>
+        <div class="col_bai">{{data.OIL}}L</div>
+    </div>
+</script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=IidNXL5Yvwg4EKunQk5pGQUxUqrsWKAY"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+<script src="../js/product/baidu.js"></script>
+
+</html>

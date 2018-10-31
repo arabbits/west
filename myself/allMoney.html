@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../less/myself.css">
+    <link rel="stylesheet" href="../css/mycss/allMoney.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:;">
+                <span class="mui-action-back mui-icon mui-icon-back "></span>
+            </a>
+            <h4>消费总计</h4>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volist_nomode hiden">
+            <div class="volist_bgimg che_display">
+                <div class="backImg"></div>
+                <div>暂无消费</div>
+            </div>
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="allMoney_head che_display">
+                        <div>总金额消费</div>
+                        <div class="che_color">￥10235.5</div>
+                    </div>
+                    <div class="allMoney_main" >
+                        <div class="mainOnes che_display">
+                            <div class="che_display">
+                                <span>车牌&nbsp;:</span>
+                                <span>沪A68231</span>
+                            </div>
+                            <div class="che_display open_all">
+                                <span>车辆总消费&nbsp;:</span>
+                                <span class="che_color">￥10235</span>
+                                <span class="mui-icon mui-icon-arrowright"></span>
+                            </div>
+                        </div>
+                        <div class="mainOnes_frist">
+                            <div class="store_frist che_display">
+                                <div class="che_display">
+                                    <span class="iconfont icon-icon"></span>
+                                    <span>纳克修理厂</span>
+                                </div>
+                                <div class="che_display">
+                                    <span>店铺消费:</span>
+                                    <span>￥10235222</span>
+                                </div>
+                            </div>
+                            <div class="store_frist che_display">
+                                <div class="che_display">
+                                    <span class="iconfont icon-icon"></span>
+                                    <span>纳克修理厂</span>
+                                </div>
+                                <div class="che_display">
+                                    <span>店铺消费:</span>
+                                    <span>￥10235222</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/myjs/allMoney.js"></script>
+<script type="text/html" id="tpl">
+    
+    <div class="allMoney_head che_display">
+        <div>总金额消费</div>
+        <div class="che_color">￥{{allPrice}}</div>
+    </div>
+    {{each userCartPrice as v i}}
+    <div class="allMoney_main" >
+        <div class="mainOnes che_display">
+            <div class="che_display">
+                <span>车牌&nbsp;:</span>
+                <span>{{v.cart_licens}}</span>
+            </div>
+            <div class="che_display open_all">
+                <span>车辆总消费&nbsp;:</span>
+                <span class="che_color">￥{{v.allPrice}}</span>
+                <span class="mui-icon mui-icon-arrowright"></span>
+            </div>
+        </div>
+        <div class="mainOnes_frist">
+            {{each v.storeCartPrice as j k }}
+            <div class="store_frist che_display">
+                <div class="che_display">
+                    <span class="iconfont icon-icon"></span>
+                    <span>{{j.store_name}}</span>
+                </div>
+                <div class="che_display">
+                    <span>店铺消费:</span>
+                    <span>￥{{j.allPrice}}</span>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

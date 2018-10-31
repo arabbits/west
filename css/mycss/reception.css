@@ -1,0 +1,84 @@
+.che_main {
+  background-color: #fff;
+}
+.che_main .mui-scroll {
+  font-size: .7rem;
+}
+.che_main .mui-scroll .validate {
+  border-top: 1px solid #f5f5f5;
+  padding: .5rem .7rem;
+  align-items: center;
+}
+.che_main .mui-scroll .validate .validate_father {
+  justify-content: space-between;
+  padding: .25rem 0;
+  margin-right: .25rem;
+}
+.che_main .mui-scroll .validate .validate_father > div .val_name {
+  width: 6.5rem;
+  display: inline-block;
+}
+.che_main .mui-scroll .validate .validate_father > div .val_result > span {
+  width: 1.1rem;
+  height: 1rem;
+  margin: 0 .25rem;
+}
+.che_main .mui-scroll .validate .validate_father > div .che_color {
+  padding-left: .2rem;
+}
+.che_main .mui-scroll .validate .validate_father .vatil_secend {
+  width: 7.5rem;
+  text-align: left;
+}
+.che_main .mui-scroll .validate .validate_father .dispose {
+  display: inline-block;
+  margin: 0 .25rem;
+}
+.che_main .mui-scroll .validate .validate_father .red {
+  border: 1px solid #dc0909;
+}
+.che_main .mui-scroll .validate .validate_father .val_red {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #dc0909;
+}
+.che_main .mui-scroll .validate .validate_father .yellow {
+  border: 1px solid #f5be02;
+}
+.che_main .mui-scroll .validate .validate_father .val_yellow {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #f5be02;
+}
+.che_main .mui-scroll .validate .validate_father .green {
+  border: 1px solid #179007;
+}
+.che_main .mui-scroll .validate .validate_father .val_green {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #179007;
+}
+.che_main .mui-scroll .validate .validate_father .val_bgc {
+  background-color: transparent;
+}
+.che_main .mui-scroll .validate .thirdly > div {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: .25rem;
+}
+.che_main .mui-scroll .validate .thirdly > div span {
+  width: 13rem;
+}
+.che_main .mui-scroll .validate .thirdly > div .thrildy_one {
+  width: 3.5rem;
+}
+.che_main .mui-scroll .validate .thirdly > div > textarea {
+  padding: .2rem 0;
+  font-size: .7rem;
+  width: 13.5rem;
+  height: 1.4rem;
+  margin: 0;
+}
+.che_main .mui-scroll .validate:nth-child(2n) {
+  background-color: #f5f5f5;
+}

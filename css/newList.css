@@ -1,0 +1,268 @@
+.che_container {
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  .timer_top {
+    height:3rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+  }
+  .timer_father{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: .25rem 0;
+  }
+  
+  .header_right{
+    width: 16.6666%;
+  }
+  
+  .fiex_warp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+  
+    height: 100%;
+    width: 83.3333%;
+  }
+  .timer_top_page {
+    width: 25%;
+    text-align: center;
+    font-size: .65rem;
+    height: 2.5rem;
+    
+  }
+  .list_data {
+    /* padding: .25rem 0 .3rem 0; */
+    height: 1.25rem;
+    line-height: 1.25rem;
+  }
+  .timer_active {
+    background-color: #ea5504;
+    color: #fff;
+    border-radius: .125rem;
+  }
+  .datapicker_datas {
+    line-height: 2.2rem;
+    color: #ea5504;
+    text-align: center;
+  }
+  .datapicker_datas span {
+    font-size: 1.35rem;
+  }
+  
+  /* 内容 */
+  .fathers{
+    margin-top: .5rem;
+  }
+  .timer_content {
+    padding-top: 3rem;
+    /* background-color: #fff;      */
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .content_title{
+    /* margin-top: .5rem; */
+    background-color: #fff;
+  }
+  .contentList {
+    margin-top: .5rem;
+    
+    padding: .8rem .75rem;
+    /* background-color: red; */
+    font-size: .65rem;
+    position: relative;
+  }
+  .selectime{
+      letter-spacing: .05rem;
+  }
+  .money {
+    right: 7rem;
+      color: #ea5504;
+  }
+  .money em{
+      font-style: normal;
+      font-size: .5rem;
+  }
+  .reserve {
+    /* position: absolute; */
+    right: .75rem;
+    width:3rem;
+    height: 68%;
+    text-align: center;
+    padding: .45rem 0;
+    background-color: #ccc;
+    border-radius: .125rem;
+    color: #fff
+  }
+  .reserve_color{
+    background-color: #ea5504;
+    
+  }
+  .sale{
+      left: 7.125rem;
+      font-size: .5rem;
+      border: 1px solid #ea5504;
+      padding: .125rem .15rem;
+      border-radius: .25rem;
+      color: #ea5504;
+      letter-spacing: 1px;
+  }
+  
+  /* 修改选择器的样式 */
+  .mui-dtpicker .mui-dtpicker-header .mui-btn {
+    color: #ea5504;
+    border: none;
+    background-color: #f4f4f8;
+    font-size: .65rem;
+    padding: .25rem 0;
+  }
+  .mui-dtpicker .mui-dtpicker-header .mui-btn::after {
+    content: "05-7 (周五)";
+    font-size: .65rem;
+    color: black;
+    display: inline-block;
+    width: 8rem;
+    text-align: end;
+  }
+  .mui-dtpicker .mui-dtpicker-header .mui-btn-blue {
+    background-color: transparent;
+  }
+  .mui-dtpicker .mui-dtpicker-header .mui-btn-blue::after {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+  .mui-dtpicker .mui-dtpicker-header .mui-btn-blue::before {
+    content: "\e63c";
+    font-family: "iconfont" !important;
+    font-size: .65rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    width: 6rem;
+    text-align: start;  
+  
+  }
+  .mui-dtpicker .mui-dtpicker-body .mui-picker .mui-pciker-list li {
+    font-size: .55rem;
+  }
+  
+  /* 新增店铺信息 */
+  
+  .store {
+    height: 6rem;
+    font-size: .65rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: .5rem;
+    background-color: #fff;
+  }
+  .storeTou{
+    padding-right: .5rem;
+  }
+  .storeTou img{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .storemain{
+    padding-bottom: .5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .storemain .storeName{
+    font-size: .8rem;
+  }
+
+  
+  
+  
+  
+  
+  
+  /* 新增店铺css 结束 */
+  
+  .mui-popover {
+    border-radius: 1.1rem !important;
+    position: fixed;
+    width: 82%;
+    height: 70%;
+    /* height: 82%; */
+    border-radius: 0;
+    left: 50%;
+    top: 53%;
+    margin: 0 auto;
+    z-index: 999;
+    background-color: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  
+  
+  /*         修改laydate 样式    */
+  .layui-laydate, .layui-laydate-hint{
+    width: 100%;
+  }
+  .layui-laydate-content{
+    width: 100%;
+    
+  }
+  .layui-laydate-main{
+    width: 100% !important;
+  }
+  .layui-laydate-main .layui-laydate-header{
+    height: 3.2rem;
+    font-size: .8rem;
+    line-height: 2.2rem;
+    border: none;
+  }
+  .layui-laydate-main .layui-laydate-header .laydate-next-y{
+    display: none;
+  }
+  .layui-laydate-main .layui-laydate-header .laydate-prev-y{
+  
+    display: none;
+  }
+  .laydata .layui-laydate {
+    height: 100%;
+  }
+  .laydata .layui-laydate .layui-laydate-main{
+    height: 88%;
+  }
+  .laydata .layui-laydate .layui-laydate-footer{
+    height: 7%;
+    border: none;
+  }
+  .laydata .layui-laydate .layui-laydate-footer .laydate-footer-btns{
+    width: 14.5rem;
+    height: 1.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  .laydata .layui-laydate .layui-laydate-footer .laydate-footer-btns span{
+    /* width: 580px; */
+    font-size: .6rem;
+    border: none;
+  
+  }
+  .mui-toast-container{
+    bottom:15rem;
+  }

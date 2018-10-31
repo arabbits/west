@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <meta http-equiv="Pragma" content="no-cache" /> -->
+
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/myself.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <!-- <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-gear "></span>
+            </a> -->
+            <h4>个人中心</h4>
+            <a class="icon_right">
+                <span class="mui-icon iconfont icon-lingdang"></span>
+                <!-- <div class="redDian blackDian"></div> -->
+            </a>
+        </div>
+        <div class="loading">
+            <img src="./img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main" style="display: none">
+            
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <!-- 头像 -->
+                    <div class="headPortrait">
+                        <div class="portraitOne">
+                            <img src="./img/img/logo.png" alt="">
+                        </div>
+                        <div class="portraitTwo">
+                            <div class="portraitName">淼淼</div>
+                            <div class="portraitStyle">新手上路,擅长急刹</div>
+                        </div>
+                    </div>
+                    <!-- 订单信息 -->
+                    <div class="product_che">
+                        <div class="proSelf">
+                            <div>
+                                <img src="./img/img/myOne.png" alt="">
+                            </div>
+                            <div>个人信息</div>
+                        </div>
+                        <div class="proAll">
+                            <div>
+                                <img src="./img/img/myTwo.png" alt="">
+                            </div>
+                            <div>全部订单</div>
+                        </div>
+                        <div class="proCar">
+                            <div>
+                                <img src="./img/img/myThree.png" alt="">
+                            </div>
+                            <div>车辆管理</div>
+                        </div>
+                    </div>
+                    <!-- 优惠券啥的 -->
+
+                    <div class="allSuper">
+                        <div class="cheSuper " id="7">
+                            <div class="che_youhui"  >
+                                <div class="youhui_top che_display" >
+                                    <span class="mui-icon iconfont   icon-huiyuanqia"></span>
+                                    <span>会员卡</span>
+                                </div>
+                                <div class="youhui_bot che_display">
+                                    <span class="myselfNum vipNum">0</span>
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="6">
+                            <div class="che_youhui" >
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont   icon-youhuiquan1"></span>
+                                    <span>卡券列表</span>
+                                </div>
+                                <div class="youhui_bot che_display">
+                                    <span class="myselfNum kaNum">0</span>
+                                    
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="5">
+                            <div class="che_youhui" >
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont  icon-youhuiquan1"></span>
+                                    <span>扣卡记录</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="11">
+                            <div class="che_youhui" >
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont  icon-youhuiquan1"></span>
+                                    <span>消费总计</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="13">
+                            <div class="che_youhui" >
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont  icon-youhuiquan1"></span>
+                                    <span>我的抵用券</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="10">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont icon-iconduihuakuang"></span>
+                                    <span>我的预约</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="1">
+                            <div class="che_youhui" >
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont  icon-shezhi"></span>
+                                    <span>检车单记录</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="12">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont icon-wenti"></span>
+                                    <span>我的欠款</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="2">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont icon-dizhi1"></span>
+                                    <span>地址管理</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="3">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont icon-wenti"></span>
+                                    <span>常见问题</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="4">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon iconfont icon-iconduihuakuang"></span>
+                                    <span>通知列表</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheSuper" id="9">
+                            <div class="che_youhui">
+                                <div class="youhui_top">
+                                    <span class="mui-icon mui-icon mui-icon-weixin"></span>
+                                    <span>解除微信绑定</span>
+                                </div>
+                                <div class="youhui_bot">
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mui-bar mui-bar-tab">
+            <a href="index.html" class="mui-tab-item" >
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="product.html">
+                <span class="mui-icon iconfont icon-xiaoche1"></span>
+                <span class="mui-tab-label proTop">车吧族</span>
+            </a>
+            <a class="mui-tab-item mui-active" href="myself.html">
+                <span class="mui-icon mui-icon-contact"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+    </div>
+</body>
+<script src="./lib/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/myself.js"></script>
+
+
+</html>

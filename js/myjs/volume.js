@@ -1,0 +1,26 @@
+$(function(){
+    $.ajax({
+        url:api+"indexGetUserCard",
+        headers:{'userauthkey':token},
+        beforeSend:function(){
+            $('.loading').show();
+        },
+        type:'post',
+        data:{user_id:user_id},
+        success:function(data){
+            console.log(data)
+            $('.loading').hide();
+            $('.che_main').show();
+            console.log(data.data[0])
+            if(data.result){
+                $('.volume').html(template('tpl',data))
+            }else{
+                mui.toast(data.msg)
+            }
+            if(!data.data[0]){
+
+                mui.toast(data.msg)
+            }
+        }
+    })
+})

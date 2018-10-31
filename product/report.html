@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/css/data.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/product/report.css">
+    <style>
+        
+        .layui-laydate-content{
+            width: 100%;
+        }
+        .layui-laydate-main{
+            width: 100%;
+        }
+        .layui-laydate-content table{
+            width: 100%;
+        }
+    </style>
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>行程报表</h4>
+            <a class="icon_right" href="javascript:;">
+                <span class="iconfont icon-ziyuan"></span>
+            </a>
+        </div>
+        
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="volist hiden">
+            <div class="volist_nomode">
+                <div class="volist_bgimg che_display">
+                    <div class="backImg"></div>
+                    <div>今日暂无行程,</div>
+                    <div>点击右上角查看其他日期行程</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="che_main">
+            <!-- //坑 -->
+        </div>
+        <div id="pop" class="mui-popover">
+            <!-- <div class="laydata" style="height: 100%"></div> -->
+            <div class="date">
+                <div class="dateHeader">
+                    <p class="year"></p>
+                    <p class="dateDesc">
+                        <span class="nowDate">4月20日</span>
+                        <span class="nowWeek">周三</span>
+                    </p>
+                </div>
+                <div class="chooseDate">
+                    <span class="fl"><i class="iconfont icon-shape"></i></span>
+                    <span class="title">2018年4月</span>
+                    <span class="fr"><i class="iconfont icon-icon-arrow-right"></i></span>
+                </div>
+                <ul class="weekTitle clearfix">
+                    <li class="fl">日</li>
+                    <li class="fl">一</li>
+                    <li class="fl">二</li>
+                    <li class="fl">三</li>
+                    <li class="fl">四</li>
+                    <li class="fl">五</li>
+                    <li class="fl">六</li>
+                </ul>
+                <ul class="dateInfo clearfix">
+                    
+                </ul>
+                <p class="BtnP">
+                    <button class="sureBtn fr" type="button">确定</button>
+                    <button class="cancelBtn fr" type="button">取消</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/js/template.js"></script>
+<script src="../lib/js/data.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/product/report.js"></script>
+
+<script type="text/html" id="tpl">
+    
+    <div class="report_head">
+            <div class="head_fuel">
+                <div class="report_one">
+                    <img src="../img/product/9.png" alt="">
+                </div>
+                <div class="report_two">
+                    <div>总耗油
+                        <em>{{data.oil}}L</em>
+                    </div>
+                </div>
+            </div>
+            <div class="head_center">
+                <div class="report_one report_center">
+                    <img src="../img/product/say.png" alt="">
+                    <span>超过<em>40%</em>用户</span>
+                </div>
+            </div>
+            <div class="head_fuel head_money">
+                <div class="report_one">
+                    <img src="../img/product/money.png" alt="">
+                </div>
+                <div class="report_two">
+                    <div>
+                        <span>总里程</span>
+                        <em>{{data.mile}}km</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容 -->
+        <div class="report_main">
+            <div class="img_main">
+                <img src="../img/product/city.png" alt="">
+            </div>
+            <!-- <div class="father_main">
+                <div class="son_main newNam">
+                    <div class="duck">
+                        <img src="../img/product/5.png" alt="" class="foreImg">
+                        <div>总里程
+                            <em>{{data.mile}}KM</em>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="father_main ">
+                <div class="son_main newNam">
+                    <div class="duck">
+                        <img src="../img/product/7.png" alt="">
+                        <div class="newdata">
+                            <span>总时长:
+                                <em>{{data.time}}</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="father_main">
+                <div class="son_main newNam">
+                    <div class="duck">
+                        <img src="../img/product/8.png" alt="">
+                        <div>平均速度
+                            <em>{{data.average_velocity}}Km</em>/h
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="father_main">
+                <div class="son_main newNam">
+                    <div class="duck">
+                        <img src="../img/product/10.png" alt="">
+                        <div>平均油耗
+                            <em>{{data.average_oil}}L/100Km</em>
+                        </div>
+                    </div>
+                    <div class="rank shengmon">哇塞,您是节油标本,请保持哦</div>
+                </div>
+            </div>
+            <div class="father_main">
+                <div class="son_main newNam footNam">
+                    <div class="duck">
+                        <img src="../img/product/6.png" alt="">
+                        <div>二氧化碳排放量
+                            <em>{{data.dioxide}}</em>千克
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</script>
+</html>

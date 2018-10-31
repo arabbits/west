@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-left-nav "></span>
+            </a>
+            <h4>订单填写</h4>
+        </div>
+        <div class="loading hiden">
+            <img src="../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                <!--子盒子-->
+                <div class="mui-scroll">
+                    <div class="upkeep-wrap che_display">
+                        <div class="cardName">
+                            上海纳克修理厂
+                        </div>
+                        <ul class="che_display order_one">
+                            <li class="orderList che_display">
+                                <span class="iconfont icon-dizhi1"></span>
+                                <span class="cardSite">上海市普陀区真南路829号 </span>
+                            </li>
+                            <li>
+                                <span class="iconfont icon-riqi"></span>
+                                <span class="cardTime">上海市普陀区真南路829号 </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_main">
+                        <ul>
+                            <li class="orderTwo">
+                                <span class="carNum">车牌号</span>
+                                <span class="carName">
+                                    <span class="locaWhere">沪</span>
+                                    <span class="mui-icon mui-icon-arrowdown"></span>
+                                    <!-- <span class="mui-icon mui-icon-arrowup hiden"></span> -->
+                                </span>
+                                <input type="text" placeholder="请输入车牌号码" maxlength="6" class="oeder_detail chepai">
+                            </li>
+                            <li class="orderTwo">
+                                <span class="carNum">联系人</span>
+                                <input type="text" placeholder="请输入联系人姓名" maxlength="7" class="oeder_detail username">
+                                <!-- <div class="form-right">
+                                    <span class="orderMan">
+                                        <img class="hiden hideMan" src="../img/img/2.png.png" alt="">
+                                        <img class="supers" src="../img/img/3.png.png" alt="">
+                                    </span>
+
+                                    <span class="orderGirl">
+                                        <img class="showStyle" src="../img/img/1.png.png" alt="">
+                                        <img class="hiden hideStyle" src="../img/img/4.png.png" alt="">
+                                    </span>
+                                </div> -->
+                            </li>
+                            <li class="orderTwo borderNone">
+                                <span class="carNum">联系方式</span>
+                                <input type="text" placeholder="请输入手机号 " maxlength="11" class="oeder_detail mobile">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_repress" style="display: none">
+                        <ul>
+                            <li class="orderTwo">
+                                <span class="carNum">上门取送</span>
+                                <div class="repress_peo">
+                                    <div class="icon-switch ">
+                                        <span class="icon-switch__green"></span>
+                                        <span class="icon-switch__circle"></span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="orderTwo borderNone">
+                                <span class="carNum">发票</span>
+                                <span class="notKar">不需要发票</span>
+                                <div class="repress_peo">
+                                    <div class="icon-switch ">
+                                        <span class="icon-switch__green"></span>
+                                        <span class="icon-switch__circle"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_juan">
+                        <li class="orderTwo borderNone">
+                            <span class="carNum">我的抵用券</span>
+                            <span class="juan_head hiden nomer">无可用抵用券</span>
+                            <span class="juan_head haveColor">有可使用的抵用券<span class="mui-icon mui-icon-arrowright"></span></span>
+                            <!-- <span class="mui-icon mui-icon-arrowright"></span> -->
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <footer class="che_footer che_color" style="background-color: #fff; z-index: 1000;">
+            <div class="upkeep-page-bottom mui-clearfix">
+                <button class="upkeep-bottom-btn">
+                    <span class="upkeep-text-shadow">去支付</span>
+                </button>
+                <div class="upkeep-del">
+                    明细
+                    <span class="mui-icon mui-icon-arrowup"></span>
+                    <span class="mui-icon mui-icon-arrowdown hiden"></span>
+                </div>
+                <div class="cmt-real-pay">
+                    <p class="cmt-money">¥
+                        <span class="cmt-money-number">0.00 </span>
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+        <!-- 弹出框 -->
+        <div id="pop" class="mui-popover">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="che_content_title">
+                        套餐项目
+                    </div>
+                    <ul class="che_form_wrap che_form_wrap_new">
+                        <div class="order_foter">
+                            <!-- <li class="upkeep_line_wrap">
+                                <div class="upkeep-form-item">
+                                    <div class="upkeep-right-new vertical-center">
+                                        <div>
+                                            <span class="old-del-price-new">
+                                                4L </span>
+                                            <span class="new-price che_color">
+                                                <span class="new-icon-price">¥</span>329 </span>
+                                        </div>
+                                        <span class="iconfont icon-delete che_iconClose"></span>
+                                    </div>
+                                    <div class="upkeep-label">
+                                        <div class="upkeep-mess">
+                                            <span class="upkeep-parts js-fitting"> 机油 </span>
+                                            <span class=" upkeep-oil-ver-new">机场专用换购 </span>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </li> -->
+                        </div>
+                        <!-- <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>
+                                        <span class="new-price">
+                                            <span class="new-icon-price">¥</span>329 </span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 工时费 </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>
+                                        <span class="new-price">免费</span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 保养检测 </span>
+                                        <span class=" upkeep-oil-ver-new mui-icon mui-icon-close"> </span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="upkeep_line_wrap">
+                            <div class="upkeep-form-item">
+                                <div class="upkeep-right-new vertical-center">
+                                    <div>
+                                        <span class="new-icon-price">- ¥</span>329 </span>
+                                    </div>
+                                </div>
+                                <div class="upkeep-label">
+                                    <div class="upkeep-mess">
+                                        <span class="upkeep-parts js-fitting"> 乐享优惠 </span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 地址弹出框 --> 
+        <div id="pop_bottom" class="mui-popover order_zindex">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul class="order_botPover mui-clearfix">
+                            <li class="order_carry">
+                                <span>京</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>津</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>黑</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>吉</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>辽</span>
+                            </li>
+    
+                            <li class="order_carry">
+                                <span>冀</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>豫</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>鲁</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>晋</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>陕</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>蒙</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>宁</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>甘</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>新</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>青</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>藏</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>鄂</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>皖</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>苏</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>沪</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>浙</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>闽</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>湘</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>赣</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>川</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>渝</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>贵</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>云</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>粤</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>桂</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>琼</span>
+                            </li>
+                            <li class="order_carry">
+                                <span>澳</span>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/order.js?v=1.3.1"></script>
+
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/index/maintain.css">
+
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left che_display" href="javascript:history.go(-1)">
+                <span class="mui-icon mui-icon-left-nav"></span>
+                <!-- <span class="goback">返回</span> -->
+            </a>
+        </div>
+
+        <div class="loading hiden">
+            <img src="../../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="maintain_content">
+                        <div class="che_display mainTop">
+                            <span>2018-04-26 14:23</span>
+                            <span class="iconfont icon-shanchu"></span>
+                        </div>
+                        <div class="maintain_center">
+                            <div class="mainFrist">
+                                <div class="mainOne">
+                                    <span>发动机</span>
+                                </div>
+                                <div class="mainTwo che_display">
+                                    <span>动力不足</span>
+                                    <span>油耗高</span>
+                                    <span>油耗高</span>
+                                    <span>怠速不稳</span>
+                                    <span>怠速不稳</span>
+                                    <span>怠速不稳</span>
+                                    <span>怠速不稳</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maintain_center">
+                            <div class="mainFrist">
+                                <div class="mainOne">
+                                    <span>发机</span>
+                                </div>
+                                <div class="mainTwo che_display">
+                                    <span>动力不足</span>
+                                    <span>油耗高</span>
+                                    <span>油耗高</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maintain_center">
+                            <div class="mainFrist">
+                                <div class="mainOne">
+                                    <span>更多描述</span>
+                                </div>
+                                <div class="mainTwo che_display">
+                                    <span class="main_detail">动力不足动力不足动力不足动力不足动力不足动力不足动力不足动力不足动力不足</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/index/maintain.js"></script>
+<script type="text/html" id="tpl">
+    <div class="maintain_content">
+        <div class="che_display mainTop">
+            <span>2018-04-26 14:23</span>
+            <span class="iconfont icon-shanchu"></span>
+        </div>
+        {{each data as v i}}
+            {{if v.name=='更多描述'}}
+            <div class="maintain_center">
+                <div class="mainFrist">
+                    <div class="mainOne">
+                        <span>{{v.name}}</span>
+                    </div>
+                    <div class="mainTwo che_display">
+                        <span class="main_detail">{{v.product}}</span>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class="maintain_center">
+                <div class="mainFrist">
+                    <div class="mainOne">
+                        <span>{{v.name}}</span>
+                    </div>
+                    <div class="mainTwo che_display">
+
+                        {{each v.product as k j}}
+                        <span>{{k}}</span>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+
+</script>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/mycss/ation.css">
+    <style>
+        .icon_right {
+            position: absolute;
+            height: 2.2rem;
+            position: absolute;
+            top: 0;
+            right: .75rem;
+            color: #000;
+            line-height: 2.2rem;
+            }
+
+        .icon_right>span {
+            font-size: 1rem;
+
+        }
+    </style>
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>防盗安全信息</h4>
+            <a class="icon_right" href="JavaScript:;">
+                <span>清空</span>
+            </a>
+        </div>
+        <div class="ggg">
+           暂无信息
+        </div>
+
+        <div class="che_main">
+
+            <div class="guard_hdd">
+                <div class="guard_tim">
+                    <span>2018-04-28</span>
+                    <span>08:23</span>
+                </div>
+                <div class="guard_behav">
+                    <span>[鲁A88888] 于 [04-28 <span class="trim"></span> 08:23]停车熄火</span>
+                </div>
+            </div>
+             <div class="guard_hdd">
+                <div class="guard_tim">
+                    <span>2018-04-28</span>
+                    <span>08:23</span>
+                </div>
+                <div class="guard_behav">
+                    <span>[鲁A88888] 于 [04-28 <span class="trim"></span> 08:23]停车熄火</span>
+                </div>
+            </div>
+             <div class="guard_hdd">
+                <div class="guard_tim">
+                    <span>2018-04-28</span>
+                    <span>08:23</span>
+                </div>
+                <div class="guard_behav widts">
+                    <span>[鲁A88888] 于 [04-28 <span class="trim"></span> 08:23]在<span class="shigu">广西壮族自治区桂林市七星区五里店路14号</span>附近发生碰撞</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/myjs/newaddress.js"></script>
+
+
+</html>
+<script>
+    $(function () {
+        $(".icon_right").on('tap', function () {
+            mui.confirm('真的要清空么?', '信息尚未保存', ["不了", "继续"], function (e) {
+                if (e.index == 1) {
+                    console.log('呵呵')
+                    $('.che_main').remove();
+                    $('.ggg').show();
+                }
+            })
+        })
+    })
+</script>

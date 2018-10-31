@@ -1,0 +1,295 @@
+.mui-bar {
+  box-shadow: none;
+}
+.mui-bar-tab .mui-tab-item .mui-icon ~ .mui-tab-label {
+  font-size: .6rem;
+  letter-spacing: .025rem;
+  height: .7rem;
+  line-height: .7rem;
+}
+.che_container .che_header {
+  color: #fff;
+  background-color: #ea5504;
+  width: 100%;
+  font-size: 0;
+}
+.che_container .che_header div {
+  display: inline-block;
+  text-align: center;
+  font-size: .8rem;
+  height: 100%;
+  line-height: 2.2rem;
+}
+.che_container .che_header .cheSite {
+  width: 20%;
+}
+.che_container .che_header .cheSite .welcom .mui-icon {
+  font-size: .85rem;
+}
+.che_container .che_header .cheSearch {
+  position: relative;
+  width: 70%;
+  line-height: 1.35rem;
+  vertical-align: middle;
+}
+.che_container .che_header .cheSearch .searchText {
+  width: 11.15rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin: 0;
+  padding: .45rem 3rem;
+  color: #000000;
+  font-size: .55rem;
+}
+.che_container .che_header .cheSearch .mui-icon {
+  font-size: .85rem;
+  position: absolute;
+  top: .45rem;
+  color: #ccc;
+  right: 1.5rem;
+}
+.che_container .che_header .cheSearch .mui-icon-search {
+  right: 10.8rem;
+}
+.che_container .che_header .cheIcon {
+  width: 10%;
+  position: relative;
+}
+.che_container .che_header .cheIcon .mui-icon {
+  font-size: .85rem;
+}
+.che_container .che_header .cheIcon .dian {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 12px;
+  background-clip: padding-box;
+  background-color: yellow;
+  top: 0.7rem;
+  right: .6rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider {
+  height: 7.5rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-slider-group {
+  height: 7.5rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-slider-group .mui-slider-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-slider-group .mui-slider-item a img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-slider-group .mui-active {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-indicator {
+  width: .35rem;
+  height: .35rem;
+  border: .05rem solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .mui-slider .mui-active {
+  width: .8rem;
+  background-color: #fff;
+  border: none;
+  border-radius: .175rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs {
+  height: 9rem;
+  background-color: #fff;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs .cheUls {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs .cheUls .cheNavli {
+  width: 20%;
+  text-align: center;
+  padding: .8rem 0;
+  height: 4.5rem;
+  box-sizing: border-box;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs .cheUls .cheNavli a {
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs .cheUls .cheNavli a img {
+  display: inline-block;
+  width: 1.75rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_navs .cheUls .cheNavli a span {
+  color: #393939;
+  font-size: .55rem;
+  height: 1rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .indexObd {
+  height: 5rem;
+  margin-top: .5rem;
+  background: url('../img/img/obd.png') repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 .8rem 0;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .indexObd img {
+  width: 5.1rem;
+  height: 1.1rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .indexObd span {
+  height: 1.1rem;
+  width: 4rem;
+  font-size: .6rem;
+  background-color: #fff;
+  color: #fca663;
+  border-radius: .5rem;
+  text-align: center;
+  line-height: 1.1rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters {
+  margin-top: .5rem;
+  background-color: #fff;
+  height: 5rem;
+  font-size: .55rem;
+  color: #393939;
+  font-family: "Microsoft Yahei";
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .cheBiao {
+  height: 100%;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .cheBiao img {
+  width: 3.1rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont {
+  height: 100%;
+  width: 13.75rem;
+  letter-spacing: .05rem;
+  border-bottom: .025rem solid #ccc;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_son {
+  height: 2.5rem;
+  border-bottom: .025rem solid #ccc;
+  line-height: 2.5rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_son .carCont_title {
+  padding-right: 5.4rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_son .carCont_metre .mui-icon {
+  font-size: .8rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_secend {
+  margin: .4rem 0 ;
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_secend .mui-icon {
+  font-size: .7rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  color: #fff;
+  background-color: #ffca12;
+  border-radius: 50%;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_secend .carLife {
+  display: inline-block;
+  width: 50%;
+  border-right: 1px solid #ccc;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_secend .carLife span em {
+  color: #ffca12;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_conters .carCont .carCont_secend .carSafe span em {
+  color: #ffca12;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside {
+  padding: .65rem ;
+  background-color: #fff;
+  font-size: .55rem;
+  color: #393939;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside span {
+  display: inline-block;
+  height: 1.8rem;
+  line-height: 1.8rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside .aside_save {
+  padding-right: 1.25rem;
+  border-right: 1px solid #ccc;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside .aside_save .mui-icon {
+  font-size: 1rem;
+  color: #ea5504;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside .aside_wher {
+  padding: 0 1rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside .aside_time {
+  float: right;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .che_aside .aside_time .mui-icon {
+  font-size: .9rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .goLogin {
+  margin-top: .5rem;
+  height: 3rem;
+  padding: .5rem;
+  background-color: #fff;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .goLogin > div {
+  width: 100%;
+  text-align: center;
+  line-height: 2rem;
+}
+.che_container .che_main .mui-scroll-wrapper .mui-scroll .goLogin > div a {
+  display: inline-block;
+  height: 2rem;
+  width: 100%;
+  border-radius: .25rem;
+  font-size: .65rem;
+  color: #fff;
+  background-color: #ea5504;
+  letter-spacing: .05rem;
+}
+.che_container .mainFoter {
+  height: 2rem;
+  width: 100%;
+  font-size: .55rem;
+  background-color: #faf9f0;
+  text-align: center;
+  line-height: 2rem;
+  position: absolute;
+  bottom: 2.5rem;
+}
+.che_container .mainFoter > span a {
+  font-size: .55rem;
+  color: #e55252;
+}

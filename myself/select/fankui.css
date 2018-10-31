@@ -1,0 +1,21 @@
+
+  .che_textre{
+      margin: .75rem;
+      margin-bottom: 1.5rem;
+  }
+  textarea{
+      outline:none;
+      resize:none;
+      font-size: .65rem;
+      color: #393939;
+      padding: .75rem;
+      height: 200px;
+      border: none;
+  }
+  
+.che_main{
+    height: none;
+}
+.che_container{
+    padding-bottom: 0;
+}

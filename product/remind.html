@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/product/base.css">
+    <link rel="stylesheet" href="../css/product/remind.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left">
+                <span class="mui-action-back mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>到时提醒</h4>
+        </div>
+
+        <div class="che_main">
+            <div class="remind_head repair">
+                <div class="remindPho"><img src="../img/product/nao.png" alt=""></div>
+                <div class="remind_spa">
+                    <div class="remind_repair">保养提醒</div>
+                    <div class="remind_click ">点我吧, 开始保养啦</div>
+                </div>
+                <div class="righRem">
+                    <span class="mui-icon mui-icon-arrowright"></span>
+                </div>
+            </div>
+            <div class="remind_head timers">
+                    <div class="remindPho"><img src="../img/product/timer (1).png" alt=""></div>
+                    <div class="remind_spa">
+                        <div class="remind_repair">时间提醒</div>
+                        <div class="remind_click ">点我吧, 设置到期时间</div>
+                    </div>
+                    <div class="righRem">
+                        <span class="mui-icon mui-icon-arrowright"></span>
+                    </div>
+                </div>
+        </div>
+</body>
+<script src="../lib/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<!-- <script src="../js/product/remind.js"></script> -->
+<script>
+    $(function(){
+        $('.timers').on('tap',function(){
+            location.href = "./remind/timers.html"
+        })
+        $('.repair').on('tap',function(){
+            location.href = "./remind/repair.html"
+        })
+    })
+</script>
+</html>

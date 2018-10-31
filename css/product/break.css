@@ -1,0 +1,53 @@
+.che_main .break_head {
+  padding-top: 1.5rem;
+  font-size: .8rem;
+  text-align: center;
+}
+.che_main .break_head div {
+  height: 1.5rem;
+  line-height: .75rem;
+  letter-spacing: .025rem;
+}
+.che_main .break_head .ping_break {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  font-size: .65rem;
+  padding-left: 2.5rem;
+}
+.che_main .break_head .ping_break div {
+  vertical-align: top;
+  line-height: .55rem;
+  padding-right: .4rem;
+}
+.che_main .break_head .ping_break > span {
+  display: inline-block;
+  width: 1rem;
+  height: .65rem;
+  margin-right: 1.4rem;
+  background-color: #fda831;
+}
+.che_main .break_head .ping_break .orang {
+  background-color: #ea5504;
+}
+.che_main .drive_main {
+  padding: 0 1rem 0 2.3rem;
+}
+.che_main .drive_main .eachres .chart {
+  width: 15.45rem;
+  height: 13.5rem;
+}
+.che_main .drive_main .eachres .chart div {
+  font-size: .6rem !important;
+}
+.che_main .wenzi {
+  padding: 1.9rem 2.5rem 0 2.5rem;
+  font-size: .65rem;
+  letter-spacing: .05rem;
+  text-indent: 1.25rem;
+  line-height: 1rem;
+}
+.che_main .wenzi .starts > span {
+  color: #ea4405;
+}

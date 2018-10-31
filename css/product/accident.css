@@ -1,0 +1,85 @@
+.mui-scroll {
+  padding: 0 .5rem;
+}
+.mui-scroll .addidentHeader .accTitle {
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: .7rem;
+  color: #a7a7a7;
+  padding-left: .8rem;
+}
+.mui-scroll .addidentHeader .noHave {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: .75rem;
+  color: #ea5504;
+}
+.mui-scroll .addidentHeader .acc_main {
+  margin-bottom: .75rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view::before {
+  background-color: #fff;
+  height: 0;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view::after {
+  background-color: #fff;
+  height: 0;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view {
+  box-shadow: 0px 0px .3rem 1px #ccc;
+  border-radius: .25rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell {
+  padding: .55rem .5rem .65rem .9rem;
+  border-radius: .25rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell.mui-active {
+  background-color: #fff;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell.mui-collapse.mui-active {
+  margin: 0;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-navigate-right {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: -0.7rem -0.75rem;
+  margin-right: -0.25rem;
+  padding: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: .75rem;
+  color: #ea5504;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-navigate-right.mui-active {
+  background-color: #fff;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-navigate-right:after {
+  color: #ea5504;
+  font-size: .8rem;
+  top: 46%;
+  left: 6.5rem;
+  width: .7rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-navigate-right .accTime {
+  position: absolute;
+  right: .5rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-navigate-right .guzhang {
+  width: 5.75rem;
+  display: inline-block;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .hideColor {
+  color: #000;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .hideColor:after {
+  color: #000;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-collapse-content {
+  text-indent: 1.4rem;
+}
+.mui-scroll .addidentHeader .acc_main .mui-table-view .mui-table-view-cell .mui-collapse-content p {
+  line-height: 1.05rem;
+  font-size: .7rem;
+}

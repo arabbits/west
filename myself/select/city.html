@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="city.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="javascript:;">
+                <span class="mui-action-back mui-icon mui-icon-back "></span>
+            </a>
+            <h4>选择城区</h4>
+
+        </div>
+
+        <div class="che_main">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="cityGod">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+    <div class="cityGod_city" data-id="{{v.region_id}}">
+        <span class="shengName pay_left">{{v.region_name}}</span>
+        <span class="mui-icon mui-icon-arrowright pay_right"></span>
+    </div>
+    {{/each}}
+</script>
+<script>
+    var siteObj = sessionStorage.getItem('siteObj');
+    siteObj=JSON.parse(siteObj);
+    var shiid = siteObj.shiid;
+    $.ajax({
+        url: api + 'indexUserSelectAddress',
+        type: 'post',
+        headers: {
+            'userauthkey': token
+        },
+        data: {
+            id: shiid,
+            type_id: 3,
+        },
+        success: function (data) {
+            console.log(data);
+            $('.cityGod').html(template('tpl', data));
+            $('.cityGod').on('tap', '.cityGod_city', function () {
+                var districtid = $(this).data('id');
+                console.log(districtid)
+                var city = $(this).find('.shengName').text();
+                console.log(city);
+                siteObj.districtid = districtid;
+                siteObj.city = city;
+                // 将三级联动的所有id与地址字符串存到siteObj中
+                sessionStorage.setItem('siteObj', JSON.stringify(siteObj))
+                
+                var obj = sessionStorage.getItem('editObj');
+                if(obj !=='null' && obj){
+                    obj = JSON.parse(obj);
+                    delete obj.edittext;
+                }
+                sessionStorage.setItem('editObj',JSON.stringify(obj))
+                history.go(-3);
+            })
+        }
+    })
+</script>
+
+</html>

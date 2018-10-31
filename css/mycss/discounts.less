@@ -1,0 +1,133 @@
+
+//我的主页的优惠券的样式
+
+.che_container{
+    padding-bottom: 0;
+    .che_header{
+        >h4{
+            // 头部的icon
+            span{
+                font-size: 1rem;
+            }
+        }
+        .icon_right{
+            height: 2.2rem;
+            position: absolute;
+            top: 0;
+            right: .75rem;
+            color: #000;
+            line-height: 2.2rem;
+            >span{
+                font-size: .75rem;
+            }
+            // 使用说明的小红点
+            >em{
+                display: inline-block;
+                width: .35rem;
+                height: .35rem;
+                background-color: #ff0000;
+                border-radius: 50%;
+                position: absolute;
+                top: .65rem;
+                right: -.35rem;
+            }
+        }
+    }
+    .che_main{
+        .mui-scroll{
+            padding: 0 .65rem 0 .8rem;
+            .discount_main{
+                // height: 6.3rem;
+                margin-top: .5rem;
+                padding: .9rem .6rem .6rem .7rem;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: .75rem;
+                background: #fff url("../../img/img/bej.png") no-repeat bottom left;
+                // background-size：252px ;
+                background-size: 100%;
+                
+                .disHead{
+                    padding-bottom: 10px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    // align-items: flex-end;
+                    
+                    .moddil{
+                        div{
+                            height: .85rem;
+                            line-height: .75rem;
+                                
+                        }
+                        .aging{
+                            font-size: .6rem;
+                            color: #a0a0a0;
+                        }
+                    }
+                    .zheko{
+                        // font-size: 1.6rem;
+                        color: #ea5504;
+                        margin-bottom: .35rem;
+                        em{
+                            font-size: .95rem;
+                        }
+                    }
+                    .nozhe{
+                        color: #ccc;
+                    }
+                }
+                .disMain{
+                    font-size: 15px;
+                    flex-direction: column;
+                }
+                .disNav{
+                    padding-top: 10px;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: .6rem;
+                    color: #a0a0a0;
+                    align-items: flex-end;
+                    .oldMoney{
+                        // width: 9.075rem;
+                        padding: 0 5px;
+                        // line-height: .75rem;
+                    }
+                    // .looks{
+                    //     line-height: .7rem;
+                    //     display: -webkit-box;
+                    //     display: -webkit-flex;
+                    //     display: flex;
+                    //     height: .75rem;
+                    // >.mui-icon{
+                    //         font-size: .75rem;
+                    //     }
+                    // }
+                    .looks{
+                        padding: 0 5px;
+                        background-color: #ea5504;
+                        color: #ffffff;
+                        border-radius: 5px;
+                    }
+                    .noLooks{
+                        background-color: #ccc;
+                    }
+                }
+            }
+            .discount_main:last-child{
+                margin-bottom: 10px;
+            }
+            .shit_main{
+                background: #fff url("../../img/img/bejC.png") no-repeat bottom left;
+                background-size: 100%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,88 @@
+
+/* 公共类 */
+.pay_right{
+    float: right;
+}
+em{
+    font-style: normal;
+    font-size: .65rem;
+}
+.pay_div{
+    height: 2.5rem;
+    line-height: 2.5rem;    
+    padding: 0 .8rem;
+    background-color: #fff;
+
+}
+.che_main{
+    letter-spacing: .05rem;
+}
+
+/* 头部 */
+.parNumb{
+    font-size: .75rem;
+    margin-bottom: .5rem;
+    
+}
+.pay_money{
+    color: #ea5504;
+}
+
+/* 余额 */
+.balance{
+    color: #ccc;
+    font-size: .65rem;
+    margin-bottom: .5rem;
+    
+}
+
+/* 支付 */
+.payMent{
+    font-size: .65rem;
+}
+.payMent_style{
+    position: relative;
+    
+}
+.payMent_style .boxfa img{
+    width: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 .35rem 0 .2rem;
+}
+.pay_select{
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-top: .75rem;
+}
+.pay_color{
+    background-color: #ea5504;
+}
+.pay_select .mui-icon{
+    font-size: 1.25rem;
+    color: #fff;
+    position: absolute;
+    top: .65rem;
+    right: .65rem;
+}
+.grayColor{
+    background-color: #ccc;
+}
+
+/* 修改一下底部 */
+.che_container{
+    padding-bottom: 3.525rem;
+}
+.che_footer{
+    height: 3.5rem;
+    padding: .5rem;
+    background-color: #fff;
+}
+.message_pay{
+    text-align: center;border-radius: .25rem;
+    line-height: 2.5rem;
+    background-color: #ea5504;
+}

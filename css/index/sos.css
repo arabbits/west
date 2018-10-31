@@ -1,0 +1,59 @@
+.che_container .che_header .icon_right {
+  height: 2.2rem;
+  position: absolute;
+  top: .2rem;
+  right: .75rem;
+  color: #000;
+  line-height: 2.2rem;
+}
+.che_container .che_header .icon_right > span {
+  font-size: 1rem;
+}
+.che_container .che_main {
+  font-size: .7rem;
+}
+.che_container .che_main .mui-scroll .che_sos {
+  border-radius: .5rem;
+  padding: 1rem 2.25rem;
+  background-color: #fff;
+  text-align: center;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_name {
+  font-size: .75rem;
+  margin-bottom: .5rem;
+  padding-bottom: .25rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product {
+  padding-bottom: .4rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product > div {
+  text-align: start;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .5rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product > div > span {
+  width: 11rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product > div .sosOne {
+  width: 4.15rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product > div > a {
+  font-size: .75rem;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product > div > a > .mui-icon-phone {
+  width: auto;
+  margin-left: .4rem;
+  color: #ea5504;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product .sos_frist {
+  justify-content: start;
+}
+.che_container .che_main .mui-scroll .che_sos .che_sosMain .sos_product .sos_secend {
+  align-items: center;
+}

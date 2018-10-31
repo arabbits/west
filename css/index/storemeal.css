@@ -1,0 +1,36 @@
+.che_main .storemeal_main {
+  padding: 10px 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.che_main .storemeal_main .storemeal_type {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_photo {
+  height: 175px;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_photo img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_product {
+  flex-direction: column;
+  font-size: 14px;
+  height: 75px;
+  padding-left: 8px;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_product .storemeal_name {
+  height: 40px;
+  line-height: 40px;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_product .storemeal_star {
+  height: 35px;
+  color: #ea5504;
+}
+.che_main .storemeal_main .storemeal_type .storemeal_product .storemeal_star .storemeal_money {
+  font-size: 16px;
+}

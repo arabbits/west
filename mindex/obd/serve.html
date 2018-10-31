@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../../less/myself.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/index/obd.css">
+    <title>车吧族</title>
+</head>
+
+<body>
+    <div class="che_container che_newcont">
+
+        <div class="che_header mui-clearfix">
+            <a class="icon_left" href="./obd.html">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h4>托管服务</h4>
+        </div>
+        
+        <div class="loading hiden">
+            <img src="../../img/img/jiazai.gif" alt="">
+        </div>
+        <div class="che_main hiden">
+            <div class="mui-scroll-wrapper">
+                    <!--子盒子-->
+                <div class="mui-scroll">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../lib/js/mui.min.js"></script>
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/js/template.js"></script>
+<script src="../../js/rem.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/index/obd.js"></script>
+<script type="text/html" id="tpl">
+    {{each data as v i}}
+
+    <div class="obd_main" data-id={{v.goods_id}}>
+            <div>
+                <div class="obd_name">套餐名称:</div>
+                <div class="obdName">{{v.goods_name}}</div>
+            </div>
+            <div>
+                    <div class="obd_name">商品规格:</div>
+                    <div class="obd_guige">I型</div>
+            </div>
+            <div class="obd_sons">
+                <div>
+                    <div class="obd_name">商品价格:</div>
+                    <div class="obd_money">￥{{v.selling_price}}</div>
+                </div>
+                <div class="obd_pay"><span>继续购买</span></div>
+            </div>
+        </div>
+    {{/each}}
+</script>
+</html>
